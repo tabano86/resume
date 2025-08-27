@@ -24,56 +24,40 @@
 \usepackage{microtype}       % Improves typography and line breaking
 \usepackage[none]{hyphenat}  % Prevents word splitting
 
-
-%========================================================================================
-%
-%   RESUME CONFIGURATION
-%
-%========================================================================================
-
-% --- Personal Information ---
-\newcommand{\resumeName}{Anthony Tabano}
-\newcommand{\resumeLocation}{Hudson Valley, NY}
-\newcommand{\resumePhone}{845-849-4125}
-\newcommand{\resumeEmail}{anthony.tabano.dev@gmail.com}
-\newcommand{\resumeLinkedIn}{linkedin.com/in/anthonytabano}
-\newcommand{\resumeLocationUrl}{https://www.google.com/maps/place/Hudson+Valley}
-
-% --- Color Palette (Refined & Modern) ---
-\definecolor{colorHeadings}{RGB}{20, 40, 80}  % Deep Navy Blue
-\definecolor{colorText}{RGB}{40, 40, 40}      % Dark Charcoal
-\definecolor{colorSubtle}{gray}{0.45}
-\definecolor{colorRule}{gray}{0.75}
-\definecolor{colorBullet}{RGB}{20, 40, 80}   % Matching Navy Blue
-
-% --- Font Selection (Unified & Modern) ---
-\setmainfont{Fira Sans}
-
-
 %========================================================================================
 %
 %   DOCUMENT ENGINE (PART 2: LAYOUT & COMMANDS)
 %
 %========================================================================================
 
+% --- Color Palette (Defined here for template consistency) ---
+\definecolor{colorHeadings}{RGB}{20, 40, 80}  % Deep Navy Blue
+\definecolor{colorText}{RGB}{40, 40, 40}      % Dark Charcoal
+\definecolor{colorSubtle}{gray}{0.45}
+\definecolor{colorRule}{gray}{0.75}
+\definecolor{colorBullet}{RGB}{20, 40, 80}   % Matching Navy Blue
+
+% --- Font Selection (Defined here for template consistency) ---
+\setmainfont{Fira Sans}
+
 %----------------------------------------------------------------------------------------
 %   LAYOUT & SPACING
 %----------------------------------------------------------------------------------------
 \color{colorText} % Set the default text color for the document
-\linespread{1.05}
+\linespread{1.1} % Slightly increased for readability
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.1em}
 
 % Define spacing constants for a consistent vertical rhythm
 \newlength{\spacingAfterHeaderName}      \setlength{\spacingAfterHeaderName}{5pt}
-\newlength{\spacingAfterHeaderContact}   \setlength{\spacingAfterHeaderContact}{1.1em}
+\newlength{\spacingAfterHeaderContact}   \setlength{\spacingAfterHeaderContact}{1.2em}
 \newlength{\spacingAfterSectionTitle}    \setlength{\spacingAfterSectionTitle}{8pt}
-\newlength{\spacingBeforeSectionTitle}   \setlength{\spacingBeforeSectionTitle}{11pt}
+\newlength{\spacingBeforeSectionTitle}   \setlength{\spacingBeforeSectionTitle}{13pt} % Adjusted
 \newlength{\spacingAfterSkills}          \setlength{\spacingAfterSkills}{10pt}
-\newlength{\spacingBetweenJobs}          \setlength{\spacingBetweenJobs}{1.2em}
+\newlength{\spacingBetweenJobs}          \setlength{\spacingBetweenJobs}{1.4em} % Adjusted for balance
 \newlength{\spacingAfterJobHeader}       \setlength{\spacingAfterJobHeader}{0.8em}
 \newlength{\spacingBulletPointTop}       \setlength{\spacingBulletPointTop}{4pt}
-\newlength{\spacingBulletPointItem}      \setlength{\spacingBulletPointItem}{5pt}
+\newlength{\spacingBulletPointItem}      \setlength{\spacingBulletPointItem}{7pt}    % Adjusted
 
 % Page style for the header on subsequent pages
 \pagestyle{fancy}
@@ -137,6 +121,7 @@
     \sloppy
 
 % Input the resume content from a separate file
+% This is the only file you need to edit.
     \input{content.tex}
 
 \end{document}
