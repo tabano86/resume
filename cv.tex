@@ -1,0 +1,238 @@
+\documentclass[11pt,letterpaper]{article}
+
+%========================================================================================
+%
+%   DOCUMENT ENGINE (PART 1: PACKAGES)
+%   - Packages must be loaded before their commands are used.
+%
+%========================================================================================
+\usepackage[
+  hmargin=0.5in,
+  top=0.45in,
+  bottom=0.5in,
+  headheight=17pt,
+  headsep=10pt
+]{geometry} % Page dimensions
+\usepackage{xcolor}          % Color management
+\usepackage{fontspec}        % For custom font loading
+\usepackage{enumitem}        % For custom list environments
+\usepackage{titlesec}        % For custom section titles
+\usepackage{tabularx}        % For tables with auto-wrapping columns
+\usepackage{fontawesome5}    % For icons (phone, email, etc.)
+\usepackage{fancyhdr}        % For custom headers and footers
+\usepackage[document]{ragged2e} % For ragged right alignment
+\usepackage[colorlinks=true, urlcolor=black, linkcolor=black]{hyperref} % Clickable links (styled subtly)
+\usepackage{microtype}       % Improves typography and line breaking
+\usepackage[none]{hyphenat}  % Prevents word splitting
+
+
+%========================================================================================
+%
+%   RESUME CONFIGURATION
+%   - Use this section to easily update your personal information, colors, and fonts.
+%
+%========================================================================================
+
+% --- Personal Information ---
+\newcommand{\resumeName}{Anthony Tabano}
+\newcommand{\resumeLocation}{Hudson Valley, NY}
+\newcommand{\resumePhone}{845-849-4125}
+\newcommand{\resumeEmail}{anthony.tabano.dev@gmail.com}
+\newcommand{\resumeLinkedIn}{linkedin.com/in/anthonytabano}
+\newcommand{\resumeLocationUrl}{https://www.google.com/maps/place/Hudson+Valley}
+
+% --- Color Palette (Refined & Modern) ---
+\definecolor{colorHeadings}{RGB}{20, 40, 80}  % Deep Navy Blue
+\definecolor{colorText}{RGB}{40, 40, 40}      % Dark Charcoal
+\definecolor{colorSubtle}{gray}{0.45}
+\definecolor{colorRule}{gray}{0.75}
+\definecolor{colorBullet}{RGB}{20, 40, 80}   % Matching Navy Blue
+
+% --- Font Selection (Unified & Modern) ---
+\setmainfont{Fira Sans}
+
+
+%========================================================================================
+%
+%   DOCUMENT ENGINE (PART 2: LAYOUT & COMMANDS)
+%   - This section defines the document's layout and custom commands.
+%
+%========================================================================================
+
+%----------------------------------------------------------------------------------------
+%   LAYOUT & SPACING
+%----------------------------------------------------------------------------------------
+\color{colorText} % Set the default text color for the document
+\linespread{1.1}  % Increase line spacing for better readability
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.1em}
+
+% Define spacing constants for a consistent vertical rhythm
+\newlength{\spacingAfterHeaderName}      \setlength{\spacingAfterHeaderName}{5pt}
+\newlength{\spacingAfterHeaderContact}   \setlength{\spacingAfterHeaderContact}{1.2em}
+\newlength{\spacingAfterSectionTitle}    \setlength{\spacingAfterSectionTitle}{8pt}
+\newlength{\spacingBeforeSectionTitle}   \setlength{\spacingBeforeSectionTitle}{10pt}
+\newlength{\spacingAfterSkills}          \setlength{\spacingAfterSkills}{10pt}
+\newlength{\spacingBetweenJobs}          \setlength{\spacingBetweenJobs}{10pt}
+\newlength{\spacingAfterJobHeader}       \setlength{\spacingAfterJobHeader}{0.8em}
+\newlength{\spacingBulletPointTop}       \setlength{\spacingBulletPointTop}{4pt}
+\newlength{\spacingBulletPointItem}      \setlength{\spacingBulletPointItem}{5pt}
+
+% Page style for the header on subsequent pages
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\ifnum\value{page}>1 \small\color{colorSubtle}\resumeName\enspace|\enspace Page \thepage\fi}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+%----------------------------------------------------------------------------------------
+%   CUSTOM COMMANDS & STYLES
+%----------------------------------------------------------------------------------------
+
+% --- Header Contact Info Separator ---
+\newcommand{\contactSeparator}{\enspace{\color{colorRule}|}\enspace}
+
+% --- Section Title Formatting ---
+\titleformat
+  {name=\section,numberless}[block]
+  {\Large\bfseries\RaggedRight\color{colorHeadings}}{}{0em}{}
+  [\color{colorRule}\vspace{-0.9ex}\rule{\textwidth}{0.25pt}\vspace{-0.4ex}]
+\titlespacing*{\section}{0pt}{\spacingBeforeSectionTitle}{\spacingAfterSectionTitle}
+
+% --- Job Title Command ---
+\newcommand{\jobtitle}[4]{%
+  \noindent%
+  {\bfseries\large #1}\par%
+  \vspace{0.2em}%
+  \textcolor{colorSubtle}{%
+    \textit{#2\enspace\textbullet\enspace#3}% Company & Location
+    \hfill% Push date to the right
+    \textit{\small #4}% Date
+  }\par%
+  \vspace{\spacingAfterJobHeader}%
+}
+
+% --- Client Engagement Role Command ---
+\newcommand{\clientrole}[1]{%
+  \vspace{-4pt}\noindent%
+  \textcolor{colorSubtle}{\small\bfseries\textit{#1}}\par%
+  \vspace{2pt}%
+}
+
+% --- Experience Bullet Point List Style ---
+\setlist[itemize]{
+    leftmargin=*,
+    topsep=\spacingBulletPointTop,
+    itemsep=\spacingBulletPointItem,
+    parsep=0pt,
+    partopsep=0pt,
+    label=\textcolor{colorBullet}{\bfseries\textbullet}
+}
+
+
+%========================================================================================
+%
+%   DOCUMENT START
+%
+%========================================================================================
+\begin{document}
+\sloppy
+\thispagestyle{empty} % No header/footer on the first page
+
+%----------------------------------------------------------------------------------------
+%   HEADER
+%----------------------------------------------------------------------------------------
+{\fontsize{26pt}{30pt}\selectfont\bfseries\RaggedRight\color{colorHeadings}{\addfontfeature{LetterSpace=3.5}\resumeName}\par}
+\vspace{\spacingAfterHeaderName}
+{\small\noindent
+  \href{\resumeLocationUrl}{\textcolor{colorHeadings}{\faIcon{map-marker-alt}}\thinspace\resumeLocation}\contactSeparator
+  \href{tel:\resumePhone}{\textcolor{colorHeadings}{\faIcon{phone}}\thinspace\resumePhone}\contactSeparator
+  \href{mailto:\resumeEmail}{\textcolor{colorHeadings}{\faIcon{envelope}}\thinspace\resumeEmail}\contactSeparator
+  \href{https://\resumeLinkedIn}{\textcolor{colorHeadings}{\faIcon[brands]{linkedin}}\thinspace\resumeLinkedIn}
+\par}
+\vspace{\spacingAfterHeaderContact}
+
+%----------------------------------------------------------------------------------------
+%   SUMMARY
+%----------------------------------------------------------------------------------------
+\noindent \textbf{Senior Full-Stack Software Engineer} with over 12 years of experience architecting, building, and delivering scalable enterprise applications using Java, Spring Boot, TypeScript, and Angular. Proven track record of leading platform-wide migrations, optimizing system performance, and mentoring high-performing engineering teams in Fortune 500 environments.
+\vspace{\spacingAfterHeaderContact}
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL EXPERTISE
+%----------------------------------------------------------------------------------------
+\section*{Technical Expertise}
+\begin{tabularx}{\textwidth}{@{} >{\bfseries\scshape\raggedright}p{2.8cm} @{\hspace{1.2em}} X @{}}
+  Backend & \small Java, Spring Boot, GraphQL, PostgreSQL, SQL Server, MongoDB, Kafka, RabbitMQ, Redis \\
+  Frontend & \small TypeScript, Angular, Nx/Turborepo, Single-SPA Micro-frontends, React, RxJS, NgRx, Storybook \\
+  Cloud / DevOps & \small Kubernetes, Docker, GitHub Actions, Azure DevOps, AWS, Datadog, CI/CD Pipelines \\
+  Additional & \small Next.js, Python, C\#, Cypress, Playwright, JUnit, Mockito, Spock, Webpack \\
+\end{tabularx}
+\vspace{\spacingAfterSkills}
+
+%----------------------------------------------------------------------------------------
+%   PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section*{Professional Experience}
+
+\jobtitle{Senior Software Engineer \& Manager}{buildit @ Wipro}{Remote}{Jan 2022 -- Present}
+\clientrole{Client Engagement: Senior Software Engineer at Fortune 5 Healthcare Enterprise}
+\begin{itemize}
+    \item Architected and implemented the enterprise-wide NX component monorepo, scaling it to over 150 independently-versioned libraries. This established a single source of truth for UI development, unified design standards, and drastically reduced regression bugs by isolating the blast radius of changes.
+    \item Spearheaded a platform-wide backend standardization by refactoring dozens of Spring Boot microservices to a unified parent POM. This foundational initiative eradicated systemic dependency conflicts, streamlined the CI/CD process, and significantly reduced long-term maintenance overhead.
+    \item Engineered a self-service rules engine that decoupled complex business logic from the application codebase into dynamic decision tables. This pivotal shift empowered non-technical administrators to manage workflows directly, cutting the IT development cycle for logic changes from weeks down to hours.
+    \item Directed a critical modernization of the frontend platform to Angular 17, which included a complete overhaul of the NX monorepo's CI/CD pipeline. This effort resolved persistent build authentication failures, improved developer productivity, and ensured long-term architectural stability.
+    \item Owned the end-to-end delivery of a dynamic intake questionnaire system, from designing high-performance Java APIs for concurrent rule retrieval to implementing the provider-facing UI. This system automated critical data capture, directly improving data integrity and accelerating new market rollouts.
+    \item Systematically hardened platform security by remediating dozens of critical vulnerabilities across the full stack. Proactively addressed and patched significant threats, including Server-Side Request Forgery (SSRF) and Known Exploited Vulnerabilities (KEVs), to safeguard system integrity.
+    \item Acted as the senior technical authority and Subject Matter Expert for Java and TypeScript, setting architectural direction for major projects. Established best practices for secure, maintainable code and mentored multiple engineering teams to elevate their overall technical capabilities.
+\end{itemize}
+
+% This pagebreak is now strategically placed to ensure a clean two-page layout.
+\pagebreak 
+
+\jobtitle{Senior Full Stack Engineer}{iptiQ by Swiss Re}{Armonk, NY (Hybrid)}{Aug 2020 -- Jan 2022}
+\begin{itemize}
+  \item Directed an international team of 8 engineers in architecting and delivering a B2B2C life insurance sales SDK (Spring Boot \& Angular), successfully reducing third-party partner integration time from weeks to just days.
+  \item Re-architected a monolithic enterprise application into a scalable, event-driven system of microservices using RabbitMQ and Kubernetes, improving system resilience and uptime for high-traffic business partnerships.
+  \item Drove a company-wide modernization effort by upgrading core frameworks for over 10 legacy applications, which significantly enhanced system stability, performance, and long-term maintainability.
+  \item Proactively identified and led the remediation of over 50 critical security vulnerabilities across the application portfolio, safeguarding sensitive customer data and ensuring compliance with enterprise security standards.
+  \item Established and scaled fully automated CI/CD pipelines in Azure DevOps for an organization of over 100 engineers, creating standardized and highly reliable release processes across multiple product lines.
+\end{itemize}
+\vspace{\spacingBetweenJobs}
+
+\jobtitle{Senior Software Engineer}{AutoNation}{White Plains, NY}{Jan 2019 -- Aug 2020}
+\begin{itemize}
+  \item Architected and delivered a multithreaded Spring Batch application to replace a legacy inventory system, slashing nightly data synchronization time for 300+ dealerships from over 5 hours to under 15 minutes.
+  \item Owned the end-to-end development of a critical e-commerce feature, leading the full-stack integration of a third-party supplier API from architectural design and database modeling to backend and frontend implementation.
+  \item Designed and developed core RESTful microservices (Spring Boot, AWS) for quotes, orders, and parts, fundamentally improving the e-commerce platform's scalability, stability, and maintainability.
+\end{itemize}
+\vspace{\spacingBetweenJobs}
+
+\jobtitle{Software Engineer \& Supervisor}{Teachers College, Columbia University}{New York, NY}{Dec 2016 -- Jan 2019}
+\begin{itemize}
+    \item Engineered and deployed a key financial automation tool that integrated with the Banner ERP system, eliminating over 20 hours of manual data entry and reconciliation for the finance department monthly.
+    \item Led the complete product lifecycle as the sole engineer for a new online payment platform, from initial stakeholder requirements gathering and architectural planning to final implementation and university-wide rollout.
+    \item Supervised a team of data analysts and developed a comprehensive SQL training program, empowering staff with self-service reporting capabilities and significantly reducing IT support requests.
+\end{itemize}
+\vspace{\spacingBetweenJobs}
+
+\jobtitle{Aerospace \& Software Engineer}{Sikorsky, a Lockheed Martin Company}{Stratford, CT}{Aug 2013 -- Dec 2016}
+\begin{itemize}
+    \item Successfully pivoted from aerospace to software engineering by independently mastering C\#, Python, and SQL to build custom data processing and automation tools, saving hundreds of engineering hours annually.
+    \item Applied a rigorous engineering mindset to analyze flight computer telemetry and aircraft sensor data, predicting component failures and driving design improvements for the CH-53K and S-92 helicopter programs.
+\end{itemize}
+\vspace{\spacingBetweenJobs}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION & CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\section*{Education \& Certifications}
+\begin{tabularx}{\textwidth}{@{} >{\raggedright}X r @{}}
+  \textbf{Master of Science, Computer Science} & \textit{Sacred Heart University} \\
+  \textbf{Bachelor of Science, Aerospace Engineering} & \textit{Embry-Riddle Aeronautical University} \\
+  \textbf{Bachelor of Science, Management} & \textit{SUNY Morrisville} \\
+  \textbf{FAA Private Pilot License} & \\
+\end{tabularx}
+
+\end{document}
