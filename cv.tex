@@ -6,9 +6,9 @@
 %
 %========================================================================================
 \usepackage[
-    hmargin=0.40in,
-    top=0.38in,v
-    bottom=0.40in,
+    hmargin=0.5in,
+    top=0.5in,
+    bottom=0.50in,
     headheight=17pt,
     headsep=10pt
 ]{geometry} % Page dimensions
@@ -26,49 +26,72 @@
 
 %========================================================================================
 %
-%   DOCUMENT ENGINE (PART 2: LAYOUT & COMMANDS)
+%   DOCUMENT ENGINE (PART 2: THEME & LAYOUT)
+%   - All aesthetic and structural settings are defined here.
 %
 %========================================================================================
 
-% --- Color Palette (Defined here for template consistency) ---
+%----------------------------------------------------------------------------------------
+%   1. COLOR PALETTE
+%----------------------------------------------------------------------------------------
 \definecolor{colorHeadings}{RGB}{20, 40, 80}  % Deep Navy Blue
 \definecolor{colorText}{RGB}{40, 40, 40}      % Dark Charcoal
 \definecolor{colorSubtle}{gray}{0.45}
 \definecolor{colorRule}{gray}{0.75}
 \definecolor{colorBullet}{RGB}{20, 40, 80}   % Matching Navy Blue
 
-% --- Font Selection (Defined here for template consistency) ---
+%----------------------------------------------------------------------------------------
+%   2. FONT SELECTION
+%----------------------------------------------------------------------------------------
 \setmainfont{Fira Sans}
 
 %----------------------------------------------------------------------------------------
-%   LAYOUT & SPACING
+%   3. SPACING & LAYOUT CONSTANTS
+%   - All vertical and horizontal spacing is controlled from here to ensure
+%   - a consistent layout. Edit these values to fine-tune the template.
 %----------------------------------------------------------------------------------------
-\color{colorText} % Set the default text color for the document
-\linespread{1.2} % Slightly increased for readability
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.1em}
+% --- Page & Paragraph Spacing ---
+\linespread{1.15} % Global line spacing for readability
+\setlength{\parindent}{0pt} % No indentation for new paragraphs
+\setlength{\parskip}{0.1em}   % Minimal space between paragraphs
 
-% Define spacing constants for a consistent vertical rhythm
-\newlength{\spacingAfterHeaderName}      \setlength{\spacingAfterHeaderName}{5pt}
-\newlength{\spacingAfterHeaderContact}   \setlength{\spacingAfterHeaderContact}{1.2em}
-\newlength{\spacingAfterSectionTitle}    \setlength{\spacingAfterSectionTitle}{8pt}
-\newlength{\spacingBeforeSectionTitle}   \setlength{\spacingBeforeSectionTitle}{11pt} % Adjusted
-\newlength{\spacingAfterSkills}          \setlength{\spacingAfterSkills}{-10pt}
-\newlength{\spacingBetweenJobs}          \setlength{\spacingBetweenJobs}{1.2em} % Adjusted for balance
-\newlength{\spacingAfterJobHeader}       \setlength{\spacingAfterJobHeader}{0.8em}
-\newlength{\spacingBulletPointTop}       \setlength{\spacingBulletPointTop}{4pt}
-\newlength{\spacingBulletPointItem}      \setlength{\spacingBulletPointItem}{7pt}    % Adjusted
+% --- Header Spacing ---
+\newlength{\headerNameBottomMargin}    \setlength{\headerNameBottomMargin}{5pt}
+\newlength{\headerContactBottomMargin} \setlength{\headerContactBottomMargin}{1.2em}
 
-% Page style for the header on subsequent pages
+% --- Section Spacing ---
+\newlength{\sectionTitleTopMargin}     \setlength{\sectionTitleTopMargin}{1.2em}
+\newlength{\sectionTitleBottomMargin}  \setlength{\sectionTitleBottomMargin}{0.8em}
+
+% --- Professional Experience Spacing ---
+\newlength{\jobGroupBottomMargin}      \setlength{\jobGroupBottomMargin}{1.2em} % Space BETWEEN job entries
+\newlength{\jobTitleToMetaMargin}      \setlength{\jobTitleToMetaMargin}{0.2em}  % Space between job title and company/date line
+\newlength{\jobMetaToBulletsMargin}    \setlength{\jobMetaToBulletsMargin}{0.8em}  % Space between company/date line and bullet points
+\newlength{\clientRoleTopMargin}       \setlength{\clientRoleTopMargin}{-5pt} % Negative space to tuck it under the job meta line
+\newlength{\clientRoleBottomMargin}    \setlength{\clientRoleBottomMargin}{4pt}   % Space after the client role line
+
+% --- Bullet List Spacing ---
+\newlength{\bulletListTopMargin}       \setlength{\bulletListTopMargin}{0pt}   % Top padding for the entire list
+\newlength{\bulletListItemSeparation}  \setlength{\bulletListItemSeparation}{0.5em} % Space between individual bullet points
+
+% --- Technical Expertise Table Spacing ---
+\newcommand{\skillsRowHeightScale}{1.4} % Multiplier for row height (like \arraystretch)
+\newlength{\skillsLabelWidth}          \setlength{\skillsLabelWidth}{3.4cm}
+\newlength{\skillsLabelValueGap}       \setlength{\skillsLabelValueGap}{1.0em}
+\newlength{\skillsTableBottomMargin}   \setlength{\skillsTableBottomMargin}{0.2em} % Space after the entire table
+
+%----------------------------------------------------------------------------------------
+%   4. PAGE STYLE & DEFAULTS
+%----------------------------------------------------------------------------------------
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[R]{\ifnum\value{page}>1 \small\color{colorSubtle}\resumeName\enspace|\enspace Page \thepage\fi}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
+\color{colorText} % Set the default text color for the document
 
 %----------------------------------------------------------------------------------------
-%   CUSTOM COMMANDS & STYLES
+%   5. CUSTOM COMMANDS & STYLES
 %----------------------------------------------------------------------------------------
 
 % --- Header Contact Info Separator ---
@@ -78,34 +101,34 @@
 \titleformat
 {name=\section,numberless}[block]
 {\Large\bfseries\RaggedRight\color{colorHeadings}}{}{0em}{}
-[\color{colorRule}\vspace{-0.9ex}\rule{\textwidth}{0.25pt}\vspace{-0.4ex}]
-\titlespacing*{\section}{0pt}{\spacingBeforeSectionTitle}{\spacingAfterSectionTitle}
+[\color{colorRule}\vspace{-0.9ex}\rule{\textwidth}{0.25pt}\vspace{-0.4ex}] % Decorative rule
+\titlespacing*{\section}{0pt}{\sectionTitleTopMargin}{\sectionTitleBottomMargin}
 
 % --- Job Title Command ---
 \newcommand{\jobtitle}[4]{%
     \noindent%
     {\bfseries\large #1}\par%
-    \vspace{0.2em}%
+    \vspace{\jobTitleToMetaMargin}%
     \textcolor{colorSubtle}{%
         \textit{#2\enspace\textbullet\enspace#3}% Company & Location
         \hfill% Push date to the right
         \textit{\small #4}% Date
     }\par%
-    \vspace{\spacingAfterJobHeader}%
+    \vspace{\jobMetaToBulletsMargin}%
 }
 
 % --- Client Engagement Role Command ---
 \newcommand{\clientrole}[1]{%
-    \vspace{-4pt}\noindent%
+    \vspace{\clientRoleTopMargin}\noindent%
     \textcolor{colorSubtle}{\small\bfseries\textit{#1}}\par%
-    \vspace{2pt}%
+    \vspace{\clientRoleBottomMargin}%
 }
 
 % --- Experience Bullet Point List Style ---
 \setlist[itemize]{
     leftmargin=*,
-    topsep=\spacingBulletPointTop,
-    itemsep=\spacingBulletPointItem,
+    topsep=\bulletListTopMargin,
+    itemsep=\bulletListItemSeparation,
     parsep=0pt,
     partopsep=0pt,
     label=\textcolor{colorBullet}{\bfseries\textbullet}
