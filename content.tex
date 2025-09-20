@@ -2,11 +2,10 @@
 %
 %   CONTENT.TEX - YOUR RESUME DATA
 %   - All your personal information and resume text are defined here.
-%   - This is the only file you need to edit for content updates.
 %
 %========================================================================================
 
-%--- PERSONAL DETAILS (fill these in) ---
+%--- PERSONAL DETAILS ---
 \renewcommand{\resumeName}{Anthony Tabano}
 \renewcommand{\resumeLocation}{Hudson Valley, NY}
 \renewcommand{\resumePhone}{845-849-4125}
@@ -15,153 +14,97 @@
 \renewcommand{\resumeLocationUrl}{https://www.google.com/maps/place/Hudson+Valley}
 
 %========================================================================================
-%
 %   RESUME BODY STARTS HERE
-%   - This section uses the commands and settings defined in cv.tex
-%
 %========================================================================================
-\pagestyle{empty} % No header/footer on any page
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %   HEADER
 %----------------------------------------------------------------------------------------
-{\fontsize{26pt}{30pt}\selectfont\bfseries\RaggedRight\color{colorHeadings}{\addfontfeature{LetterSpace=3.5}\resumeName}
-\par}
+{\fontsize{26pt}{30pt}\selectfont\bfseries\RaggedRight\color{colorHeadings}{\addfontfeature{LetterSpace=3.5}\resumeName}\par}
 \vspace{\headerNameBottomMargin}
 {\small\noindent
 \href{\resumeLocationUrl}{\textcolor{colorHeadings}{\faIcon{map-marker-alt}}\thinspace\resumeLocation}\contactSeparator
 \href{tel:\resumePhone}{\textcolor{colorHeadings}{\faIcon{phone}}\thinspace\resumePhone}\contactSeparator
 \href{mailto:\resumeEmail}{\textcolor{colorHeadings}{\faIcon{envelope}}\thinspace\resumeEmail}\contactSeparator
-\href{https://\resumeLinkedIn}{\textcolor{colorHeadings}{\faIcon[brands]{linkedin}}\thinspace\resumeLinkedIn}
-\par}
+\href{https://\resumeLinkedIn}{\textcolor{colorHeadings}{\faIcon[brands]{linkedin}}\thinspace\resumeLinkedIn}\par}
 \vspace{\headerContactBottomMargin}
 
 %----------------------------------------------------------------------------------------
 %   SUMMARY
 %----------------------------------------------------------------------------------------
-\noindent \textbf{Senior Software Engineer}
-with 12+ years of experience translating complex requirements into mission-critical solutions. Expert in
-defining architectural roadmaps and delivering scalable solutions using Java, Spring Boot and TypeScript in
-cloud-native environments. My background in Aerospace Engineering provides a rigorous, methodical approach to solving
-challenges in demanding, high-stakes environments.
+\noindent
+Senior Software Engineer with 12+ years of experience architecting and delivering durable, scalable platforms that accelerate developer velocity and drive business outcomes. Expert in unifying complex distributed systems, championing org-wide technical strategy for cloud-native infrastructure (Kubernetes), and mentoring engineers to elevate technical excellence. Proven leader in modernizing legacy ecosystems into resilient, observable, and continuously delivered platforms.
 
 %----------------------------------------------------------------------------------------
 %   TECHNICAL EXPERTISE
 %----------------------------------------------------------------------------------------
-
-
 \section*{Technical Expertise}
-{ % Start a local group to contain the arraystretch change
+{
     \renewcommand{\arraystretch}{\skillsRowHeightScale}
     \begin{tabularx}{\textwidth}
     {@{} >{\bfseries\scshape\raggedright}p{\skillsLabelWidth} @{\hspace{\skillsLabelValueGap}} X @{}}
-        Backend & \small
-        Java (11+), Spring Boot, Spring Framework (Core, Security, Batch), GraphQL, REST APIs, Apache Camel,
-        Elasticsearch \\
-        Frontend & \small
-        HTML5/CSS3, TypeScript, Angular (11+), Next.js, Nx/Turborepo Monorepos, Single-SPA Micro-frontends, RxJS, NgRx,
-        Storybook \\
-        Data \& Messaging & \small PostgreSQL, SQL Server, MongoDB, Redis, Kafka, RabbitMQ, AWS SQS \\
-        Cloud \& DevOps & \small
-        Kubernetes (K8s), Docker, Helm, GitHub Actions, Azure DevOps (Pipelines), AWS, Azure, Datadog, Jenkins \\
-        Additional & \small Python, NestJS, Node.js, C\#, Cypress, Playwright, JUnit, Mockito, Webpack, Bash, Git \\
+        Languages & \small Java (11+), TypeScript/JavaScript, Python, C\#, SQL \\
+        Backend & \small Spring Boot, Spring Framework (Core/Security/Batch), NestJS, Node.js, GraphQL, REST \\
+        Cloud \& Infra & \small Kubernetes, Docker, Helm, GitHub Actions, Azure DevOps, AWS, Azure \\
+        Data \& Messaging & \small Kafka, RabbitMQ, PostgreSQL, SQL Server, MongoDB, Redis, AWS SQS, Elasticsearch \\
+        Frontend & \small Angular (11+), Next.js, Monorepos (Nx, Turborepo), Micro-Frontends (single-spa), RxJS, NgRx \\
+        Testing \& Tooling & \small Datadog, Cypress, Playwright, JUnit, Mockito, Git, Bash \\
     \end{tabularx}
-} % End the local group
+}
 \vspace{\skillsTableBottomMargin}
 
 %----------------------------------------------------------------------------------------
 %   PROFESSIONAL EXPERIENCE
 %----------------------------------------------------------------------------------------
-
-
 \section*{Professional Experience}
 
-\jobtitle{Senior Software Engineer \& Manager}{buildit}{Remote}{Jan 2022 -- Present}
-\clientrole{Client Engagement: Senior Software Engineer at Fortune 10 Healthcare}
+\jobtitle{Senior Software Engineer \& Manager}{Consulting Engagement}{Remote}{Jan 2022 -- Present}
+\clientrole{Client: Fortune 10 Healthcare Company}
 \begin{itemize}[leftmargin=*]
-    \item
-    Pioneered the client's first Nx monorepo from concept to rollout, scaling to 150+ shared libraries and establishing
-    a modern UI ecosystem that ensured a more stable and predictable release cycle.
-    \item
-    Transformed legacy frontend modules into on-demand, dynamically loaded components by introducing Single-SPA parcels,
-    an architectural shift that significantly improved key application performance metrics.
-    \item Built high-performance Java APIs to power core business functions, including the enterprise rules and dynamic
-    questionnaire engines, enabling new self-service capabilities for business users.
-    \item
-    Engineered production-grade CI/CD pipelines from scratch using GitHub Actions, Helm and Kubernetes, replacing a
-    high-risk manual process and enabling consistent, zero-downtime releases.
-    \item
-    Managed a team of 3 engineering managers and their 15 indirect reports, owning career development and performance
-    reviews while remaining fully billable as a hands-on Senior Engineer on the client engagement.
+    \item Unified a fragmented UI ecosystem by architecting its first Nx monorepo, scaling the platform to 150+ shared libraries and establishing a "paved road" for front-end development adopted org-wide.
+    \item Drove the adoption of a micro-frontend architecture using single-spa, a strategic shift that eliminated high-risk monolithic deployments and enabled teams to ship features independently and safely.
+    \item Enabled a shift from infrequent, high-risk releases to a continuous delivery model by engineering a fully automated CI/CD platform from the ground up using GitHub Actions, Helm, and Kubernetes.
+    \item Led and mentored an organization of 3 managers and 15 indirect engineers, serving as the hands-on technical anchor for the platform modernization initiative while defining career ladders and performance standards.
 \end{itemize}
 \vspace{\jobGroupBottomMargin}
 
 \jobtitle{Senior Software Engineer}{iptiQ by Swiss Re}{Armonk, NY (Hybrid)}{Aug 2020 -- Jan 2022}
 \begin{itemize}[leftmargin=*]
-    \item Led an international team of 8 engineers to design and deliver core B2B2C life insurance sales SDKs, enabling
-    third-party platforms to seamlessly integrate products to their customers using Spring Boot and Angular.
-    \item Improved system resilience and uptime for high-traffic partnerships by enhancing an event-driven microservices
-    platform with RabbitMQ and Kubernetes.
-    \item
-    Spearheaded multi-quarter modernization of 10+ legacy applications, upgrading Angular 8→12 and Spring Boot 2.1→2.5
-    to eliminate critical technical debt and resolve 50+ high-security vulnerabilities.
-    \item
-    Defined the engineering department's Git branching strategy and scaled automated CI/CD pipelines in Azure DevOps for
-    100+ engineers, establishing standardized release processes across multiple product lines.
+    \item Architected and delivered a suite of embeddable B2B2C sales SDKs, creating a standardized, reusable pathway that became the blueprint for all future partner integrations.
+    \item Hardened a high-traffic, event-driven microservices platform supporting multi-billion dollar insurance partnerships by re-architecting critical message flows with RabbitMQ, materially improving system uptime and reliability.
+    \item Reduced security exposure and retired critical technical debt by leading the modernization of 10+ core applications (Angular 8\textrightarrow12, Spring Boot 2.1\textrightarrow2.5), remediating over 50 high-severity vulnerabilities.
+    \item Standardized release engineering for over 100 engineers by defining the org-wide Git branching strategy and scaling CI/CD automation in Azure DevOps across multiple product lines.
 \end{itemize}
 \vspace{\jobGroupBottomMargin}
 
 \jobtitle{Senior Software Engineer}{AutoNation}{White Plains, NY}{Jan 2019 -- Aug 2020}
 \begin{itemize}[leftmargin=*]
-    \item Reduced nightly data synchronization for 300+ dealerships from over 5 hours to under 15 minutes by replacing a
-    legacy inventory SFTP ETL with a multithreaded Spring Batch application.
-    \item
-    Led the end-to-end integration of a major third-party parts supplier, enabling seamless e-commerce operations with
-    new architecture, inventory sync and frontend product visualization.
-    \item
-    Streamlined labor and parts data retrieval by building scalable RESTful microservices with Apache Camel, Spring
-    Boot and AWS SQS, enhancing system responsiveness and delivering new taxonomy-driven features.
+    \item Cut nightly dealership inventory ETL from 5+ hours to <15 minutes by replacing a legacy SFTP process with a multithreaded Spring Batch application, ensuring accurate pricing and availability for sales operations across 300+ locations.
+    \item Enabled a critical e-commerce revenue stream by architecting the end-to-end integration of a major third-party parts supplier, building scalable REST microservices (Apache Camel, AWS SQS) for inventory and visualization.
 \end{itemize}
 \vspace{\jobGroupBottomMargin}
 
 \jobtitle{Software Engineer \& Supervisor}{Teachers College, Columbia University}{New York, NY}{Dec 2016 -- Jan 2019}
 \begin{itemize}[leftmargin=*]
-    \item Eliminated 40+ hours of manual data entry and reconciliation per month by building and deploying a financial
-    automation tool integrated with the Banner ERP system.
-    \item
-    Delivered a tuition benefits payment platform as the sole engineer using Spring Boot and Angular; owning the full
-    lifecycle from stakeholder discovery and architecture to university-wide rollout.
-    \item
-    Supervised a small team of data analysts and created a SQL training program, enabling self-service reporting and
-    significantly reducing IT support requests.
+    \item Owned the end-to-end delivery of a university-wide financial platform, automating 40+ hours of monthly manual work and accelerating tuition benefit payments by integrating with the Banner ERP system.
+    \item Empowered business users and reduced IT support load by creating a SQL self-service analytics training program for the finance and administration departments.
 \end{itemize}
 \vspace{\jobGroupBottomMargin}
 
-\jobtitle{Aerospace \& Software Engineer (Multiple Roles)}{Sikorsky, a Lockheed Martin Company}{Stratford, CT}
-{Aug 2013 to Present}
+\jobtitle{Aerospace \& Software Engineer (Multiple Roles)}{Sikorsky, a Lockheed Martin Company}{Stratford, CT}{Aug 2013 -- Nov 2016}
 \begin{itemize}[leftmargin=*]
-    \item \textbf{Software Engineer:} Developed C\#
-    applications that automated gantt chart and status exports, streamlining reporting workflows.
-    Built Oracle PL/SQL solutions and automated Weibull-based demand forecasting for critical parts inventory.
-    Analyzed HUMS data and flight telemetry to predict component lifecycles and optimize maintenance schedules.
-    Performed predictive statistical analysis with SPSS and JMP.
-    \item \textbf{Aerospace Engineer:}
-    Planned and executed component testing protocols on flight test aircraft, ensuring critical transmission systems met
-    performance specifications. Designed assemblies in CATIA and managed configuration changes through MatrixOne release
-    systems. Coordinated with cross-functional teams to resolve engineering issues and maintain delivery schedules.
-
+    \item Automated critical engineering reporting and inventory demand forecasting using C\# and Oracle PL/SQL, improving data accuracy for predictive maintenance schedules of a major helicopter fleet.
+    \item Assured performance of critical helicopter transmission systems by planning and executing component-level stress and fatigue tests on flight test aircraft.
 \end{itemize}
-
 
 %----------------------------------------------------------------------------------------
 %   EDUCATION
 %----------------------------------------------------------------------------------------
-
-
 \section*{Education}
 \noindent
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Master of Science, Computer Science \small{(3.981 gpa)}} & Sacred Heart University \\
+    \textbf{Master of Science, Computer Science \small{(3.98 GPA)}} & Sacred Heart University \\
     \textbf{Bachelor of Science, Aerospace Engineering} & Embry-Riddle Aeronautical University \\
     \textbf{Bachelor of Business Administration} & SUNY Morrisville \\
 \end{tabularx}
