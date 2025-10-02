@@ -17,13 +17,11 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
 \usepackage{fancyhdr}
 \usepackage[document]{ragged2e}
 \usepackage[colorlinks=true, urlcolor=black, linkcolor=black]{hyperref}
 \usepackage{microtype}
 \usepackage[none]{hyphenat}
-\usepackage{textcomp}
 
 %========================================================================================
 %
@@ -46,29 +44,29 @@
 \setmainfont{Fira Sans}
 
 %----------------------------------------------------------------------------------------
-%   3. SPACING & LAYOUT CONSTANTS
+%   3. SPACING & LAYOUT CONSTANTS -- ADJUSTED FOR TWO-PAGE FIT
 %----------------------------------------------------------------------------------------
-\linespread{1.15}
+\linespread{1.12} % Reduced slightly from 1.15
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.1em}
 
 \newlength{\headerNameBottomMargin}    \setlength{\headerNameBottomMargin}{5pt}
 \newlength{\headerContactBottomMargin} \setlength{\headerContactBottomMargin}{1.2em}
 
-\newlength{\sectionTitleTopMargin}     \setlength{\sectionTitleTopMargin}{1.0em}
-\newlength{\sectionTitleBottomMargin}  \setlength{\sectionTitleBottomMargin}{0.8em}
+\newlength{\sectionTitleTopMargin}     \setlength{\sectionTitleTopMargin}{1.2em}
+\newlength{\sectionTitleBottomMargin}  \setlength{\sectionTitleBottomMargin}{0.7em} % Reduced from 0.8em
 
-\newlength{\jobGroupBottomMargin}      \setlength{\jobGroupBottomMargin}{1.2em}
+\newlength{\jobGroupBottomMargin}      \setlength{\jobGroupBottomMargin}{1.2em} % Reduced from 1.5em
 \newlength{\jobTitleToMetaMargin}      \setlength{\jobTitleToMetaMargin}{0.2em}
 \newlength{\jobMetaToBulletsMargin}    \setlength{\jobMetaToBulletsMargin}{0.8em}
 \newlength{\clientRoleTopMargin}       \setlength{\clientRoleTopMargin}{-5pt}
 \newlength{\clientRoleBottomMargin}    \setlength{\clientRoleBottomMargin}{4pt}
 
 \newlength{\bulletListTopMargin}       \setlength{\bulletListTopMargin}{0pt}
-\newlength{\bulletListItemSeparation}  \setlength{\bulletListItemSeparation}{0.5em}
+\newlength{\bulletListItemSeparation}  \setlength{\bulletListItemSeparation}{0.5em} % Reduced from 0.6em
 
 \newcommand{\skillsRowHeightScale}{1.4}
-\newlength{\skillsLabelWidth}          \setlength{\skillsLabelWidth}{3.4cm}
+\newlength{\skillsLabelWidth}          \setlength{\skillsLabelWidth}{2.8cm}
 \newlength{\skillsLabelValueGap}       \setlength{\skillsLabelValueGap}{1.0em}
 \newlength{\skillsTableBottomMargin}   \setlength{\skillsTableBottomMargin}{0.2em}
 
