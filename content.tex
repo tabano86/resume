@@ -1,11 +1,4 @@
-%========================================================================================
-%
-%   CONTENT.TEX - YOUR RESUME DATA
-%   - All your personal information and resume text are defined here.
-%
-%========================================================================================
-
-%--- PERSONAL DETAILS ---
+% Personal details
 \renewcommand{\resumeName}{Anthony Tabano}
 \renewcommand{\resumeLocation}{Hudson Valley, NY}
 \renewcommand{\resumePhone}{+1-845-849-4125}
@@ -13,135 +6,84 @@
 \renewcommand{\resumeLinkedIn}{linkedin.com/in/anthonytabano}
 \renewcommand{\resumeLocationUrl}{https://www.google.com/maps/place/Hudson+Valley}
 
-%========================================================================================
-%   RESUME BODY STARTS HERE
-%========================================================================================
-\pagestyle{empty}
-
-%----------------------------------------------------------------------------------------
-%   HEADER
-%----------------------------------------------------------------------------------------
-{\fontsize{26pt}{30pt}\selectfont\bfseries\RaggedRight\color{colorHeadings}{\addfontfeature{LetterSpace=3.5}\resumeName}
-\par}
+% Header
+{\fontsize{26pt}{30pt}\selectfont\bfseries\RaggedRight
+\textcolor{colorHeadings}{\addfontfeature{LetterSpace=3.5}\resumeName}\par}
 \vspace{\headerNameBottomMargin}
 {\small\noindent
-\href{\resumeLocationUrl}{\textcolor{colorHeadings}{}\resumeLocation}\contactSeparator
-\href{tel:\resumePhone}{\textcolor{colorHeadings}{}\resumePhone}\contactSeparator
-\href{mailto:\resumeEmail}{\textcolor{colorHeadings}{}\resumeEmail}\contactSeparator
-\href{https://\resumeLinkedIn}{\textcolor{colorHeadings}{}\resumeLinkedIn}\par}
+\href{\resumeLocationUrl}{\textcolor{colorHeadings}{\resumeLocation}}\contactSeparator
+\href{tel:\resumePhone}{\textcolor{colorHeadings}{\resumePhone}}\contactSeparator
+\href{mailto:\resumeEmail}{\textcolor{colorHeadings}{\resumeEmail}}\contactSeparator
+\href{https://\resumeLinkedIn}{\textcolor{colorHeadings}{\resumeLinkedIn}}\par}
 \vspace{\headerContactBottomMargin}
 
-%----------------------------------------------------------------------------------------
-%   SUMMARY
-%----------------------------------------------------------------------------------------
+% Summary
 \noindent
 Staff Software Engineer focused on reliability and developer speed for large distributed systems. Built the first
 unified Nx monorepo for more than fifteen teams to cut conflicts and steady releases. Owns platform governance,
 strengthens release pipelines, and stabilizes systems across Spring Boot, Kubernetes, and Kafka.
 
-%----------------------------------------------------------------------------------------
-%   TECHNICAL EXPERTISE
-%----------------------------------------------------------------------------------------
-
-
+% Technical Expertise
 \section*{Technical Expertise}
-\begin{itemize}[leftmargin=0pt, label={}]
+\begin{itemize}[leftmargin=0pt,label={}]
     \item \textbf{Languages:} Java 17 and later, TypeScript, JavaScript, Python, C\#, SQL
     \item \textbf{Backend:} Spring Boot, Spring Cloud, NestJS, Node.js, GraphQL, Camunda
     \item \textbf{Cloud \& DevOps:} Azure (AKS, Event Hubs, Blob Storage), AWS, Kubernetes, Docker, Helm
     \item \textbf{Data \& Messaging:} Kafka, RabbitMQ, PostgreSQL, Redis, Elasticsearch, MongoDB
-    \item \textbf{Frontend:} Angular, Nx monorepos, single spa micro frontends, RxJS
+    \item \textbf{Frontend:} Angular, Nx monorepos, single-spa micro frontends, RxJS
     \item \textbf{Governance \& CI/CD:} GitHub Actions, branching strategy, repository rules (CODEOWNERS)
     \item \textbf{Observability \& Testing:} Datadog, Cypress, Playwright, JUnit, Mockito, Git
 \end{itemize}
 \vspace{1em}
 
-%----------------------------------------------------------------------------------------
-%   PROFESSIONAL EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-
+% Professional Experience
 \section*{Professional Experience}
 
 \jobtitle{Staff Software Engineer (Consulting)}{Wipro}{Remote}{Jan 2022 -- Present}
 \clientrole{Client: Optum}
-\begin{itemize}[leftmargin=*]
-    \item
-    Built and rolled out the first Nx monorepo to unify more than fifteen teams. Created a single source of truth that
-    removed recurring merge issues and steadied releases.
-    \itemResolved hard dependency conflicts with a single spa parcels approach. Enabled independent deploys and isolated
-    runtimes for micro frontends.
-    \item
-    Designed and shipped business process flows in Camunda. Integrated with a distributed set of about twenty Spring
-    Boot services to automate core operations.
+\begin{itemize}
+    \item Built and rolled out the first Nx monorepo to unify more than fifteen teams. Created a single source of truth that removed recurring merge issues and steadied releases.
+    \item Resolved hard dependency conflicts with a single-spa parcels approach. Enabled independent deploys and isolated runtimes for micro frontends.
+    \item Designed and shipped business process flows in Camunda. Integrated with a distributed set of about twenty Spring Boot services to automate core operations.
     \item Improved and extended the GraphQL layer. Reduced query time and added features to support new front end needs.
-    \item
-    Scaled the org by managing managers, leading hiring for key roles, and serving as the primary technical advisor for
-    proofs of concept and cross team work.
+    \item Scaled the org by managing managers, leading hiring for key roles, and serving as the primary technical advisor for proofs of concept and cross-team work.
 \end{itemize}
 \vspace{\jobGroupBottomMargin}
 
 \jobtitle{Senior Software Engineer}{iptiQ by Swiss Re}{Armonk, NY (Hybrid)}{Aug 2020 -- Jan 2022}
-\begin{itemize}[leftmargin=*]
-    \itemProtected data integrity in a high traffic sales platform. Built an idempotent consumer and strong DLQ plan for
-    RabbitMQ to remove a class of race conditions.
-    \item
-    Drove repository governance across more than fifty projects. Set the organization wide branching model and enforced
-    checks with GitHub Actions.
-    \item
-    Led the run team for production support. Owned on call, incident triage, postmortems, and clear updates to business
-    partners.
-    \item
-    Guided the build team roadmap from backlog to delivery. Planned sprints and shipped new services for core lines of
-    business.
-    \item
-    Modernized more than ten core apps to current Spring Boot and Angular. Cleared over fifty high severity issues and
-    stabilized the stack.
+\begin{itemize}
+    \item Protected data integrity in a high-traffic sales platform. Built an idempotent consumer and strong DLQ plan for RabbitMQ to remove a class of race conditions.
+    \item Drove repository governance across more than fifty projects. Set the organization-wide branching model and enforced checks with GitHub Actions.
+    \item Led the run team for production support. Owned on-call, incident triage, postmortems, and clear updates to business partners.
+    \item Guided the build team roadmap from backlog to delivery. Planned sprints and shipped new services for core lines of business.
+    \item Modernized more than ten core apps to current Spring Boot and Angular. Cleared over fifty high-severity issues and stabilized the stack.
 \end{itemize}
 \vspace{\jobGroupBottomMargin}
 
 \jobtitle{Senior Software Engineer}{AutoNation}{White Plains, NY}{Jan 2019 -- Aug 2020}
-\begin{itemize}[leftmargin=*]
-    \item
-    Cut a nightly data load from more than five hours to under fifteen minutes by replacing a legacy SFTP ETL with a
-    multithreaded Spring Batch solution. Unblocked analytics for more than three hundred dealerships.
-    \itemDesigned new inventory and product services. Defined APIs, data models, and storage to support a major commerce
-    expansion.
-    \item
-    Delivered the full integration of a major parts supplier. Built ingestion and transform logic to bring their catalog
-    into the platform.
+\begin{itemize}
+    \item Cut a nightly data load from more than five hours to under fifteen minutes by replacing a legacy SFTP ETL with a multithreaded Spring Batch solution. Unblocked analytics for more than three hundred dealerships.
+    \item Designed new inventory and product services. Defined APIs, data models, and storage to support a major commerce expansion.
+    \item Delivered the full integration of a major parts supplier. Built ingestion and transform logic to bring their catalog into the platform.
 \end{itemize}
 \vspace{\jobGroupBottomMargin}
 
 \jobtitle{Software Engineer \& Supervisor}{Teachers College, Columbia University}{New York, NY}{Dec 2016 -- Jan 2019}
-\begin{itemize}[leftmargin=*]
-    \item
-    Shipped a university wide finance platform as the sole engineer. Automated more than forty hours of manual work each
-    month with direct Banner ERP integration.
-    \itemRan the full lifecycle from intake to launch. Met with non technical finance leaders, designed the system, and
-    trained users after release.
-    \item
-    Grew skills across the org with a SQL training program for finance and admin teams. Enabled self service reporting.
+\begin{itemize}
+    \item Shipped a university-wide finance platform as the sole engineer. Automated more than forty hours of manual work each month with direct Banner ERP integration.
+    \item Ran the full lifecycle from intake to launch. Met with non-technical finance leaders, designed the system, and trained users after release.
+    \item Grew skills across the org with a SQL training program for finance and admin teams. Enabled self-service reporting.
 \end{itemize}
 \vspace{\jobGroupBottomMargin}
 
 \jobtitle{Aerospace \& Software Engineer}{Sikorsky, a Lockheed Martin Company}{Stratford, CT}{Aug 2013 -- Nov 2016}
-\begin{itemize}[leftmargin=*]
-    \item Earned a Sikorsky Top Gear Award for a C\#
-    and PLSQL automation that improved forecasting and reporting. Helped raise fleet readiness.
-    \item
-    Built the first real time analytics control room by embedding Tableau dashboards into internal sites. Gave leaders
-    live views of key metrics.
-    \item
-    Analyzed helicopter telemetry and health data to support predictive maintenance. Found failure patterns and improved
-    maintenance plans.
+\begin{itemize}
+    \item Earned a Sikorsky Top Gear Award for a C\# and PL/SQL automation that improved forecasting and reporting. Helped raise fleet readiness.
+    \item Built the first real-time analytics control room by embedding Tableau dashboards into internal sites. Gave leaders live views of key metrics.
+    \item Analyzed helicopter telemetry and health data to support predictive maintenance. Found failure patterns and improved maintenance plans.
 \end{itemize}
 
-%----------------------------------------------------------------------------------------
-%   EDUCATION
-%----------------------------------------------------------------------------------------
-
-
+% Education
 \section*{Education}
 \noindent
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
