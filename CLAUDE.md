@@ -70,9 +70,10 @@ These are real, verified from contemporaneous resumes:
 | Metric | Source | Notes |
 |--------|--------|-------|
 | 12,500+ daily active users | Jul 2025 resume | Optum MFE portal |
-| 5+ hours → under 15 minutes | Multiple versions | AutoNation Spring Batch |
+| 5+ hours → under 15 minutes | Multiple versions | AutoNation inventory batch (Spring Batch) |
+| 1M+ parts catalog | Oct 2021 resume | AutoNation order management scale |
 | 300+ dealerships | Multiple versions | AutoNation scope |
-| 8-member team | Oct 2021 resume | iptiQ onshore/offshore |
+| 8-member team | Oct 2021 resume | iptiQ onshore/offshore team |
 | 10+ applications modernized | Oct 2021 resume | iptiQ Angular/Spring upgrade |
 | 50+ critical CVEs | Jul 2025 resume | iptiQ security work |
 | 100+ engineer organization | Oct 2021 resume | iptiQ SAFe org size |
@@ -80,6 +81,19 @@ These are real, verified from contemporaneous resumes:
 | 1.5-year greenfield | Jul 2025 resume | Teachers College payment platform |
 | 20+ TV screens | Dec 2019 resume | Sikorsky analytics mission control |
 | GPA: 3.981 | Dec 2019 resume | M.S. Computer Science |
+
+## Additional Verified Details (From Deep Archive Dive)
+
+| Detail | Source | Use Case |
+|--------|--------|----------|
+| "Screened engineering candidates through interviews" | Oct 2021 iptiQ resume | Shows hiring bar involvement |
+| "3-legged OAuth2 (CAS/Shibboleth → JWT)" | Oct 2021 resume | Security/auth expertise at Teachers College |
+| "Monte Carlo simulations and ANOVA forecasting" | Dec 2019 resume | Statistical modeling at Sikorsky |
+| "FAA certification, flight testing" collaboration | Dec 2019 resume | Regulatory experience |
+| "Visited aircraft hangers...inspect part wear" | Dec 2019 resume | Hands-on field work |
+| "Acted as DBA for internal reporting systems" | Dec 2019 resume | Database administration at Sikorsky |
+| github.com/tabano86 | Mar 2025 resume | GitHub profile |
+| ClipCraft IntelliJ plugin | Mar 2025 resume | Open source contribution |
 
 ## Education (Verified)
 
