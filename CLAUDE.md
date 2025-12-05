@@ -54,6 +54,7 @@ LaTeX-based resume for **Anthony Tabano**, a Senior Software Engineer targeting 
 - Lie about the relationship if directly asked
 - Badmouth Wipro aggressively (keep it professional)
 - Claim "Staff Engineer" title (actual title is Senior)
+- Claim "Engineering Manager" in job title (management is secondary to IC work, not primary)
 - Claim to do "system design interviews" (he does technical interviews, not system design)
 
 ## Build Commands
@@ -92,7 +93,7 @@ out/             # Build output (gitignored)
 
 | Dates | Company | Title | Key Facts |
 |-------|---------|-------|-----------|
-| Jan 2022 – Present | Wipro/buildit → Optum | Sr. Engineer & Manager | Dual role, Fortune 10, 12,500 DAU portal |
+| Jan 2022 – Present | Wipro/buildit → Optum | Sr. Software Engineer | IC at Optum + people mgmt at buildit, Fortune 10, 12,500 DAU portal |
 | Aug 2020 – Jan 2022 | iptiQ by Swiss Re | Sr. Engineer (Tech Lead) | 8-person team, B2B2C insurtech, 3 awards |
 | Jan 2019 – Aug 2020 | AutoNation | Sr. Software Engineer | 5hr→15min batch, 300+ dealerships |
 | Dec 2016 – Jan 2019 | Teachers College, Columbia | Engineer & Supervisor | Sole engineer, 1.5yr greenfield, Columbia MDP |
@@ -142,8 +143,7 @@ These are real, verified from contemporaneous resumes:
 | "FAA certification, flight testing" collaboration | Dec 2019 resume | Regulatory experience |
 | "Visited aircraft hangers...inspect part wear" | Dec 2019 resume | Hands-on field work |
 | "Acted as DBA for internal reporting systems" | Dec 2019 resume | Database administration at Sikorsky |
-| github.com/tabano86 | Mar 2025 resume | GitHub profile |
-| ClipCraft IntelliJ plugin | Mar 2025 resume | Open source contribution |
+| ClipCraft IntelliJ plugin | Mar 2025 resume | Open source contribution (GitHub not on resume) |
 
 ## Education (Verified)
 
@@ -161,7 +161,7 @@ These are real, verified from contemporaneous resumes:
 
 3. **Three Sikorsky Awards** – Rare to have multiple engineering excellence awards at a defense contractor.
 
-4. **Dual management + IC role** – Currently managing team while being hands-on technical lead.
+4. **IC with people management responsibility** – Senior engineer day-to-day while also managing 15-person org (management is secondary, not primary role).
 
 5. **Columbia MDP** – Formal leadership training from Ivy-adjacent institution.
 
@@ -204,9 +204,9 @@ Key archive files:
 
 - Email: anthony.tabano.dev@gmail.com
 - LinkedIn: linkedin.com/in/anthonytabano
-- GitHub: github.com/tabano86
 - Phone: +1-845-849-4125
 - Location: Hudson Valley, NY (Remote preferred)
+- GitHub: github.com/tabano86 (not on resume - nothing notable there)
 
 ## Target Companies & Role Alignment
 
@@ -325,7 +325,7 @@ The resume includes keywords for ATS (Applicant Tracking Systems):
 
 ### LinkedIn Profile Checklist
 
-- [ ] Headline matches target role: "Senior Software Engineer | Platform Engineering | Distributed Systems"
+- [ ] Headline matches target role: "Senior Software Engineer | Technical Leadership | Platform Engineering"
 - [ ] Company shows "buildit" not "Wipro"
 - [ ] Title shows "Senior Software Engineer"
 - [ ] Featured section shows the 12,500 DAU portal or other highlights
@@ -362,7 +362,7 @@ Be prepared to address:
 | "Short tenure at iptiQ (1.5 years)" | "Swiss Re strategically divested the iptiQ division. The team was disbanded." |
 | "No FAANG experience" | "I've operated at FAANG scale - 12,500 DAU portal, Fortune 10 healthcare org with enterprise requirements" |
 | "Aerospace background is unrelated" | "It taught me systems thinking and working in high-stakes, regulated environments - directly applicable to building reliable distributed systems" |
-| "Manager title but applying for IC" | "I've maintained hands-on technical work throughout - the management is in addition to, not instead of, engineering" |
+| "You mention managing people but applying for IC" | "The management at buildit is in addition to my primary IC work at Optum. Day-to-day I'm hands-on engineering. I'm looking to continue on the IC track." |
 
 ## Quick Reference Card
 
@@ -376,7 +376,7 @@ Be prepared to address:
 > "I'm a W2 employee of buildit, embedded at Optum. Not a 1099 contractor."
 
 **When asked "What level are you?"**
-> "Senior Software Engineer. I also have people management responsibilities - I manage a team of engineers."
+> "Senior Software Engineer. I also have people management responsibilities at my consulting firm - I manage a 15-person org there, but my day-to-day is hands-on engineering at Optum."
 
 **When asked about title discrepancy on background check:**
 > "AC2 is the internal band at Wipro/buildit. Senior Software Engineer is my functional title."

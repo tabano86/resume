@@ -7,22 +7,22 @@
 \renewcommand{\resumeLocationUrl}{https://www.google.com/maps/place/Hudson+Valley}
 
 % Header
-{\fontsize{26pt}{30pt}\selectfont\bfseries\RaggedRight
-\textcolor{colorHeadings}{\addfontfeature{LetterSpace=3.5}\resumeName}\par}
-\vspace{0.15em}
-{\normalsize\noindent\textcolor{colorHeadings}{Senior Software Engineer\enspace·\enspace Engineering Manager\enspace·\enspace Platform Engineering}\par}
+{\fontsize{25pt}{30pt}\selectfont\bfseries\RaggedRight
+\textcolor{colorHeadings}{\addfontfeature{LetterSpace=4.0}\resumeName}\par}
+\vspace{0.2em}
+{\normalsize\noindent\textcolor{colorSubtle}{Senior Software Engineer\enspace{\color{colorAccent}\textbullet}\enspace Technical Leadership\enspace{\color{colorAccent}\textbullet}\enspace Platform Engineering}\par}
 \vspace{\headerNameBottomMargin}
 {\small\noindent
 \href{\resumeLocationUrl}{\textcolor{colorHeadings}{\resumeLocation}}\contactSeparator
 \href{tel:\resumePhone}{\textcolor{colorHeadings}{\resumePhone}}\contactSeparator
 \href{mailto:\resumeEmail}{\textcolor{colorHeadings}{\resumeEmail}}\contactSeparator
-\href{https://\resumeLinkedIn}{\textcolor{colorHeadings}{\resumeLinkedIn}}\contactSeparator
-\href{https://github.com/tabano86}{\textcolor{colorHeadings}{github.com/tabano86}}\par}
+\href{https://\resumeLinkedIn}{\textcolor{colorHeadings}{\resumeLinkedIn}}\par}
+\headerAccent
 \vspace{\headerContactBottomMargin}
 
 % Summary
 \noindent
-Engineer who pivoted from analyzing flight computer data for military helicopters to building distributed systems at Fortune 10 scale. Currently senior engineer on Optum's CURO platform while managing a 15-person engineering org at buildit. Shipped micro-frontend portal serving 12,500+ daily users and drove adoption of Nx monorepo across frontend teams. Three-time Sikorsky engineering award recipient. FAA-licensed pilot.
+Engineer who transitioned from analyzing flight computer telemetry for military helicopters to architecting distributed systems at Fortune 10 scale. Senior engineer on Optum's CURO platform while managing 15-person engineering org at buildit. Shipped micro-frontend portal serving 12,500+ daily users and drove Nx monorepo adoption across frontend teams. Three-time Sikorsky award recipient. FAA-licensed pilot.
 
 % Technical Expertise
 \section*{Technical Expertise}
@@ -38,58 +38,56 @@ Engineer who pivoted from analyzing flight computer data for military helicopter
 % Professional Experience
 \section*{Professional Experience}
 
-\jobtitle{Senior Software Engineer \& Engineering Manager}{buildit, Embedded at Optum (UnitedHealth Group)}{Remote}{Jan 2022 -- Present}
+\jobtitle{Senior Software Engineer}{buildit (Consulting to Optum / UnitedHealth Group)}{Remote}{Jan 2022 -- Present}
 \begin{itemize}
-    \item \textbf{Dual role:} Senior engineer on Optum's CURO platform team (Fortune 10 healthcare) while managing \textbf{15-person engineering org} at buildit (5 directs, 2 of whom manage teams).
-    \item Became go-to engineer for frontend infrastructure. Fixed versioning chaos from hotfix-heavy release process by designing \textbf{Nx monorepo} with granular package imports. Introduced \textbf{PNPM} (company's first adoption) and modern Node tooling.
+    \item \textbf{Dual role:} Senior engineer on Optum's CURO platform team (Fortune 10 healthcare) while managing \textbf{15-person engineering org} at buildit with 5 direct reports, 2 of whom lead their own teams.
+    \item Became the go-to engineer for frontend infrastructure problems. Fixed chronic versioning chaos from hotfix-heavy releases across 4 environments by architecting the company's first \textbf{Nx monorepo} with granular package imports.
+    \item Eliminated legacy peer dependency issues across all frontend applications. Introduced \textbf{PNPM} (company's first adoption), proper dependency overrides, and modern Node tooling.
     \item Built \textbf{Single-SPA micro-frontend portal} serving \textbf{12,500+ daily active users}. Integrated backends via GraphQL federation.
-    \item Implemented first URL-based navigation in Angular so users could bookmark links. Pattern adopted across teams.
-    \item Partnered with another engineer to establish standards: unit testing, ESLint, Atomic Design. Led training sessions.
-    \item Built all CI/CD from scratch (JS, YAML) due to enterprise constraints: self-hosted runners, no third-party actions.
+    \item Implemented first URL-based navigation in Angular, enabling bookmarks and deep links. Pattern adopted across multiple teams.
+    \item Partnered with senior engineer to establish missing standards: Jest unit testing, ESLint rules, Atomic Design patterns. Led cross-team training sessions.
+    \item Authored all CI/CD pipelines from scratch (JavaScript, YAML) due to enterprise constraints: self-hosted runners, no third-party GitHub Actions.
 \end{itemize}
 
 \jobtitle{Senior Software Engineer (Technical Lead)}{iptiQ by Swiss Re}{Armonk, NY}{Aug 2020 -- Jan 2022}
 \clientrole{Left during Swiss Re's strategic divestiture of iptiQ division}
 \begin{itemize}
-    \item Led \textbf{8-member onshore/offshore team}. Owned sprint planning, code reviews, and hiring interviews.
-    \item Built B2B2C insurance SDK (Spring Boot, Angular) adopted as standard for all partner integrations.
-    \item Decomposed legacy monolith into \textbf{event-driven microservices} (RabbitMQ, Kubernetes) to unblock scaling.
-    \item Cleared \textbf{50+ critical CVEs} by modernizing \textbf{10+ apps} (Angular 8 to 12, Spring Boot 2.1 to 2.5).
+    \item Led \textbf{8-member onshore/offshore team}. Owned sprint planning, architecture decisions, code reviews, and hiring.
+    \item Built B2B2C insurance SDK (Spring Boot, Angular) adopted as standard for all white-label partner integrations.
+    \item Decomposed legacy monolith into \textbf{event-driven microservices} (RabbitMQ, Kubernetes) to unblock horizontal scaling.
+    \item Cleared \textbf{50+ critical CVEs} by modernizing \textbf{10+ applications} (Angular 8 to 12, Spring Boot 2.1 to 2.5).
 \end{itemize}
 
 \jobtitle{Senior Software Engineer}{AutoNation}{White Plains, NY}{Jan 2019 -- Aug 2020}
 \begin{itemize}
-    \item Fixed failing inventory ETL blocking nightly operations for \textbf{300+ dealerships}. Re-architected into \textbf{multithreaded Spring Batch}, cutting sync from \textbf{5+ hours to 15 minutes}.
-    \item Built order management microservices for \textbf{1M+ parts catalog} with complex pricing permutations. Used reactive patterns to stay within memory constraints.
+    \item Fixed failing inventory ETL blocking nightly operations for \textbf{300+ dealerships}. Re-architected into \textbf{multithreaded Spring Batch}, cutting sync from \textbf{5+ hours to under 15 minutes}.
+    \item Built order management microservices for \textbf{1M+ parts catalog} with complex pricing. Implemented reactive patterns for memory efficiency.
     \item Delivered e-commerce services (quotes, orders, supplier APIs) on AWS (EC2, RDS, SQS) with Apache Camel integrations.
 \end{itemize}
 
 \jobtitle{Software Engineer \& Supervisor}{Teachers College, Columbia University}{New York, NY}{Dec 2016 -- Jan 2019}
 \begin{itemize}
-    \item As sole engineer, owned \textbf{1.5-year greenfield} payment platform: roadmap, system design, full-stack build (Spring Boot, Angular, Banner ERP).
-    \item Designed \textbf{OAuth2 SSO} (CAS/Shibboleth to JWT). Built PL/SQL automation eliminating \textbf{20+ hours/month} of manual reconciliation.
-    \item Managed team of data analysts. Wrote performance reviews, created SQL curriculum enabling self-service reporting across departments.
-    \item Completed Columbia \textbf{Management Development Program} (12-week leadership cohort).
+    \item As sole engineer, owned \textbf{1.5-year greenfield} payment platform end-to-end: roadmap, system design, full-stack build (Spring Boot, Angular, Banner ERP).
+    \item Designed \textbf{OAuth2 SSO} architecture (CAS/Shibboleth to JWT). Built PL/SQL automation eliminating \textbf{20+ hours/month} of manual reconciliation.
+    \item Managed team of data analysts. Wrote performance reviews, created SQL curriculum enabling self-service reporting.
+    \item Selected for Columbia's \textbf{Management Development Program}, a competitive 12-week leadership cohort.
 \end{itemize}
 
 \jobtitle{Aerospace \& Software Engineer}{Sikorsky, a Lockheed Martin Company}{Stratford, CT}{Aug 2013 -- Dec 2016}
 \begin{itemize}
     \item Promoted twice in 3 years: Product Support Engineer to BI Developer to Design Engineer.
     \item Built C\#/PL-SQL automation analyzing flight computer telemetry for \textbf{CH-53K and S-92} military helicopter programs.
-    \item Created Tableau dashboards for \textbf{20+ screen mission control center}. Built Oracle data warehouse with Monte Carlo simulation forecasting.
-    \item Collaborated with \textbf{FAA certification} teams, flight test engineers, and conducted on-site hangar inspections of component failures.
-    \item Received \textbf{Top Gear Award} and \textbf{two Flight Awards} for automation and analytics work.
+    \item Created Tableau dashboards for \textbf{20+ screen mission control center}. Designed Oracle data warehouse with Monte Carlo forecasting.
+    \item Collaborated with \textbf{FAA certification} teams and flight test engineers. Conducted on-site hangar inspections of component failures.
+    \item Received \textbf{Top Gear Award} and \textbf{two Flight Awards} for automation and analytics contributions.
 \end{itemize}
 
 % Education
 \section*{Education \& Certifications}
-\vspace{0.3em}
+\vspace{0.2em}
 \noindent
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{M.S., Computer Science} (GPA: 3.98) & Sacred Heart University \\[0.4em]
-    \textbf{B.S., Aerospace Engineering} & Embry-Riddle Aeronautical University \\[0.4em]
-    \textbf{B.B.A., Management} & SUNY Morrisville \\
+    \textbf{\color{colorHeadings}M.S., Computer Science} {\small(GPA: 3.98)} & \textcolor{colorSubtle}{Sacred Heart University} \\[0.4em]
+    \textbf{\color{colorHeadings}B.S., Aerospace Engineering} & \textcolor{colorSubtle}{Embry-Riddle Aeronautical University} \\[0.4em]
+    \textbf{\color{colorHeadings}B.B.A., Management} & \textcolor{colorSubtle}{SUNY Morrisville} \\[0.6em]
 \end{tabularx}
-\vspace{0.5em}
-\noindent
-\textit{FAA Private Pilot License} \enspace\textbullet\enspace \textit{.NET Graduate Certificate}

@@ -16,12 +16,13 @@
 \usepackage[none]{hyphenat}
 \usepackage{needspace}
 
-% Colors
-\definecolor{colorHeadings}{RGB}{20,40,80}
-\definecolor{colorText}{RGB}{40,40,40}
-\definecolor{colorSubtle}{gray}{0.45}
-\definecolor{colorRule}{gray}{0.75}
-\definecolor{colorBullet}{RGB}{20,40,80}
+% Colors - refined navy palette
+\definecolor{colorHeadings}{RGB}{25,45,85}
+\definecolor{colorText}{RGB}{35,35,40}
+\definecolor{colorSubtle}{gray}{0.42}
+\definecolor{colorRule}{gray}{0.70}
+\definecolor{colorBullet}{RGB}{25,45,85}
+\definecolor{colorAccent}{RGB}{70,100,140}
 
 % Fonts: try Fira Sans, else Latin Modern Sans (always available)
 \IfFontExistsTF{Fira Sans}{
@@ -33,21 +34,21 @@
 }
 
 % Spacing & constants
-\linespread{1.09}
+\linespread{1.04}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.06em}
+\setlength{\parskip}{0.05em}
 
 \newlength{\headerNameBottomMargin}\setlength{\headerNameBottomMargin}{5pt}
-\newlength{\headerContactBottomMargin}\setlength{\headerContactBottomMargin}{1.25em}
-\newlength{\sectionTitleTopMargin}\setlength{\sectionTitleTopMargin}{1.25em}
-\newlength{\sectionTitleBottomMargin}\setlength{\sectionTitleBottomMargin}{0.75em}
-\newlength{\jobGroupBottomMargin}\setlength{\jobGroupBottomMargin}{1.25em}
-\newlength{\jobTitleToMetaMargin}\setlength{\jobTitleToMetaMargin}{0.22em}
-\newlength{\jobMetaToBulletsMargin}\setlength{\jobMetaToBulletsMargin}{0.85em}
+\newlength{\headerContactBottomMargin}\setlength{\headerContactBottomMargin}{1.2em}
+\newlength{\sectionTitleTopMargin}\setlength{\sectionTitleTopMargin}{1.2em}
+\newlength{\sectionTitleBottomMargin}\setlength{\sectionTitleBottomMargin}{0.7em}
+\newlength{\jobGroupBottomMargin}\setlength{\jobGroupBottomMargin}{1.2em}
+\newlength{\jobTitleToMetaMargin}\setlength{\jobTitleToMetaMargin}{0.2em}
+\newlength{\jobMetaToBulletsMargin}\setlength{\jobMetaToBulletsMargin}{0.8em}
 \newlength{\clientRoleTopMargin}\setlength{\clientRoleTopMargin}{-5pt}
 \newlength{\clientRoleBottomMargin}\setlength{\clientRoleBottomMargin}{4pt}
 \newlength{\bulletListTopMargin}\setlength{\bulletListTopMargin}{0pt}
-\newlength{\bulletListItemSeparation}\setlength{\bulletListItemSeparation}{0.52em}
+\newlength{\bulletListItemSeparation}\setlength{\bulletListItemSeparation}{0.35em}
 
 % Page style
 \pagestyle{fancy}
@@ -65,34 +66,47 @@
 \providecommand{\resumeLinkedIn}{}
 \providecommand{\resumeLocationUrl}{}
 
-\newcommand{\contactSeparator}{\enspace{\color{colorRule}|}\enspace}
+\newcommand{\contactSeparator}{\enspace{\color{colorAccent}\textbullet}\enspace}
 
 \titleformat{name=\section,numberless}[block]
-{\Large\bfseries\RaggedRight\color{colorHeadings}}{}{0em}{}
-[\color{colorRule}\vspace{-0.9ex}\rule{\textwidth}{0.25pt}\vspace{-0.4ex}]
+{\Large\bfseries\RaggedRight\color{colorHeadings}\addfontfeature{LetterSpace=2.0}}{}{0em}{}
+[\color{colorRule}\vspace{-0.85ex}\rule{\textwidth}{0.4pt}\vspace{-0.35ex}]
 \titlespacing*{\section}{0pt}{\sectionTitleTopMargin}{\sectionTitleBottomMargin}
 
 \newcommand{\jobtitle}[4]{%
     \needspace{3\baselineskip}%
-    \noindent{\bfseries\large #1}\par
+    \noindent{\bfseries\large\color{colorHeadings}#1}\hfill{\small\color{colorSubtle}#4}\par
     \vspace{\jobTitleToMetaMargin}
-    \textcolor{colorSubtle}{\textit{#2\enspace\textbullet\enspace#3}\hfill\textit{\small #4}}\par
+    \textcolor{colorSubtle}{\textit{#2\enspace{\color{colorAccent}\textbullet}\enspace#3}}\par
     \vspace{\jobMetaToBulletsMargin}
 }
 
 \newcommand{\clientrole}[1]{%
     \vspace{\clientRoleTopMargin}\noindent
-    \textcolor{colorSubtle}{\small\bfseries\textit{#1}}\par
+    \textcolor{colorSubtle}{\small\textit{#1}}\par
     \vspace{\clientRoleBottomMargin}
 }
 
 \setlist[itemize]{
-    leftmargin=*,
+    leftmargin=1.2em,
     topsep=\bulletListTopMargin,
     itemsep=\bulletListItemSeparation,
     parsep=0pt,
     partopsep=0pt,
-    label=\textcolor{colorBullet}{\bfseries\textbullet}
+    after=\vspace{0.3em},
+    label=\textcolor{colorBullet}{\textbullet}
+}
+
+% Header accent line - full width, subtle
+\newcommand{\headerAccent}{%
+    \vspace{0.5em}%
+    \noindent{\color{colorRule}\rule{\textwidth}{0.4pt}}%
+    \vspace{0.1em}%
+}
+
+% Summary styling - subtle emphasis
+\newcommand{\summarytext}[1]{%
+    \noindent\textcolor{colorText}{#1}%
 }
 
 \begin{document}
