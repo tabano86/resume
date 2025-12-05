@@ -1,3 +1,35 @@
+# Build output
 /out/
+
+# IDE
 /.idea/
-/auxil/
+*.iml
+
+# LaTeX auxiliary files (if building outside /out)
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*~
+*.swp
+*.swo
+*.bak
+
+# Keep the repo clean - no PDFs in version control
+# Build fresh with: ./build.ps1 (Windows) or make (Unix)
+*.pdf
