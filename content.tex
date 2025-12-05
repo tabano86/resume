@@ -10,7 +10,7 @@
 {\fontsize{26pt}{30pt}\selectfont\bfseries\RaggedRight
 \textcolor{colorHeadings}{\addfontfeature{LetterSpace=3.5}\resumeName}\par}
 \vspace{0.15em}
-{\normalsize\noindent\textcolor{colorHeadings}{Senior Software Engineer\enspace·\enspace Technical Lead\enspace·\enspace Distributed Systems}\par}
+{\normalsize\noindent\textcolor{colorHeadings}{Senior Software Engineer\enspace·\enspace Engineering Manager\enspace·\enspace Platform Engineering}\par}
 \vspace{\headerNameBottomMargin}
 {\small\noindent
 \href{\resumeLocationUrl}{\textcolor{colorHeadings}{\resumeLocation}}\contactSeparator
@@ -22,77 +22,74 @@
 
 % Summary
 \noindent
-Platform engineer who pivoted from analyzing flight computer data for military helicopters to architecting distributed systems at Fortune 10 scale. Technical lead on Optum's CURO platform, also managing engineers and driving hiring at buildit. Built organization's first Nx monorepo, shipped micro-frontend portal serving 12,500+ daily users, and led modernization across 10+ applications. Three-time Sikorsky engineering award recipient. FAA-licensed pilot.
+Engineer who pivoted from analyzing flight computer data for military helicopters to building distributed systems at Fortune 10 scale. Currently senior engineer on Optum's CURO platform while managing a 15-person engineering org at buildit. Shipped micro-frontend portal serving 12,500+ daily users and drove adoption of Nx monorepo across frontend teams. Three-time Sikorsky engineering award recipient. FAA-licensed pilot.
 
 % Technical Expertise
 \section*{Technical Expertise}
-\begin{itemize}[leftmargin=0pt,label={},itemsep=0.1em]
+\begin{itemize}[leftmargin=0pt,label={},itemsep=0.15em]
     \item \textbf{Languages:} Java 17+, TypeScript, Python, SQL, C\#
     \item \textbf{Backend:} Spring Boot/Cloud, GraphQL, REST APIs, Microservices, Kafka, RabbitMQ
     \item \textbf{Cloud \& Infrastructure:} Azure (AKS, DevOps), AWS (EC2, RDS, SQS, Lambda), Kubernetes, Docker, Helm, Terraform
     \item \textbf{Data:} PostgreSQL, MongoDB, Redis, Elasticsearch, Oracle, SQL Server
     \item \textbf{Frontend:} Angular, React, Nx monorepos, Single-SPA, Module Federation, RxJS
-\end{itemize}
-\vspace{-0.3em}
-\begin{itemize}[leftmargin=0pt,label={},itemsep=0.1em]
-    \item \textbf{Architecture:} System Design, Micro-frontends, Event-driven Systems, API Design
-    \item \textbf{Practices:} CI/CD, Agile/Scrum, Observability (Datadog), Testing (Cypress, JUnit)
+    \item \textbf{Architecture \& Practices:} System Design, Micro-frontends, Event-driven Systems, CI/CD, Observability (Datadog), Testing (Jest, Cypress, JUnit)
 \end{itemize}
 
 % Professional Experience
 \section*{Professional Experience}
 
-\jobtitle{Senior Software Engineer / Technical Lead}{buildit --- Embedded at Optum (UnitedHealth Group)}{Remote}{Jan 2022 -- Present}
+\jobtitle{Senior Software Engineer \& Engineering Manager}{buildit, Embedded at Optum (UnitedHealth Group)}{Remote}{Jan 2022 -- Present}
 \begin{itemize}
-    \item Technical lead on Optum's CURO platform team (Fortune 10 healthcare); own architecture decisions, lead design reviews, and mentor engineers. Also manage team at buildit: performance reviews, hiring, and technical direction.
-    \item Architected organization's first \textbf{Nx monorepo}, consolidating frontend codebases into unified structure with independent versioning and per-app CI/CD pipelines.
-    \item Built greenfield \textbf{Single-SPA micro-frontend portal} serving \textbf{12,500+ daily active users}, integrating disparate backends via GraphQL federation.
-    \item Led \textbf{Angular 11$\rightarrow$17 migration} across five applications; identified bottlenecks via Datadog APM and eliminated performance regressions.
-    \item Replaced manual deployments with production CI/CD (GitHub Actions, Helm, Kubernetes)---enabling zero-downtime releases.
+    \item \textbf{Dual role:} Senior engineer on Optum's CURO platform team (Fortune 10 healthcare) while managing \textbf{15-person engineering org} at buildit (5 directs, 2 of whom manage teams).
+    \item Became go-to engineer for frontend infrastructure. Fixed versioning chaos from hotfix-heavy release process by designing \textbf{Nx monorepo} with granular package imports. Introduced \textbf{PNPM} (company's first adoption) and modern Node tooling.
+    \item Built \textbf{Single-SPA micro-frontend portal} serving \textbf{12,500+ daily active users}. Integrated backends via GraphQL federation.
+    \item Implemented first URL-based navigation in Angular so users could bookmark links. Pattern adopted across teams.
+    \item Partnered with another engineer to establish standards: unit testing, ESLint, Atomic Design. Led training sessions.
+    \item Built all CI/CD from scratch (JS, YAML) due to enterprise constraints: self-hosted runners, no third-party actions.
 \end{itemize}
 
 \jobtitle{Senior Software Engineer (Technical Lead)}{iptiQ by Swiss Re}{Armonk, NY}{Aug 2020 -- Jan 2022}
 \clientrole{Left during Swiss Re's strategic divestiture of iptiQ division}
 \begin{itemize}
-    \item Led \textbf{8-member onshore/offshore team}; owned sprint planning, code reviews, and technical interviews for engineering candidates.
-    \item Built B2B2C insurance SDK (Spring Boot, Angular) adopted as standard for all white-label partner integrations.
-    \item Architected \textbf{event-driven microservices} (RabbitMQ, Kubernetes) replacing legacy monolith; enabled horizontal scaling.
-    \item Drove modernization of \textbf{10+ applications}---Angular 8$\rightarrow$12, Spring Boot 2.1$\rightarrow$2.5---mitigating \textbf{50+ critical CVEs}.
-    \item Established quality gates (coverage thresholds, linting); contributed to SAFe planning across 100+ engineer org.
+    \item Led \textbf{8-member onshore/offshore team}. Owned sprint planning, code reviews, and hiring interviews.
+    \item Built B2B2C insurance SDK (Spring Boot, Angular) adopted as standard for all partner integrations.
+    \item Decomposed legacy monolith into \textbf{event-driven microservices} (RabbitMQ, Kubernetes) to unblock scaling.
+    \item Cleared \textbf{50+ critical CVEs} by modernizing \textbf{10+ apps} (Angular 8 to 12, Spring Boot 2.1 to 2.5).
 \end{itemize}
 
 \jobtitle{Senior Software Engineer}{AutoNation}{White Plains, NY}{Jan 2019 -- Aug 2020}
 \begin{itemize}
-    \item Re-architected monolithic inventory ETL into \textbf{multithreaded Spring Batch}; cut nightly sync for \textbf{300+ dealerships from 5+ hours to under 15 minutes}.
-    \item Built order management microservices handling \textbf{1M+ parts catalog} with complex pricing permutations; optimized memory via reactive patterns.
-    \item Delivered e-commerce services (quotes, orders, supplier APIs) on AWS (EC2, RDS, SQS) with Apache Camel for partner integrations.
+    \item Fixed failing inventory ETL blocking nightly operations for \textbf{300+ dealerships}. Re-architected into \textbf{multithreaded Spring Batch}, cutting sync from \textbf{5+ hours to 15 minutes}.
+    \item Built order management microservices for \textbf{1M+ parts catalog} with complex pricing permutations. Used reactive patterns to stay within memory constraints.
+    \item Delivered e-commerce services (quotes, orders, supplier APIs) on AWS (EC2, RDS, SQS) with Apache Camel integrations.
 \end{itemize}
 
 \jobtitle{Software Engineer \& Supervisor}{Teachers College, Columbia University}{New York, NY}{Dec 2016 -- Jan 2019}
 \begin{itemize}
     \item As sole engineer, owned \textbf{1.5-year greenfield} payment platform: roadmap, system design, full-stack build (Spring Boot, Angular, Banner ERP).
-    \item Designed \textbf{OAuth2 SSO} (CAS/Shibboleth $\rightarrow$ JWT); built PL/SQL automation eliminating \textbf{20+ hours of manual work monthly}.
-    \item Managed small team of data analysts; wrote performance reviews; created SQL curriculum enabling self-service reporting.
+    \item Designed \textbf{OAuth2 SSO} (CAS/Shibboleth to JWT). Built PL/SQL automation eliminating \textbf{20+ hours/month} of manual reconciliation.
+    \item Managed team of data analysts. Wrote performance reviews, created SQL curriculum enabling self-service reporting across departments.
     \item Completed Columbia \textbf{Management Development Program} (12-week leadership cohort).
 \end{itemize}
 
 \jobtitle{Aerospace \& Software Engineer}{Sikorsky, a Lockheed Martin Company}{Stratford, CT}{Aug 2013 -- Dec 2016}
 \begin{itemize}
-    \item Promoted twice in 3 years: Product Support Engineer $\rightarrow$ BI Developer $\rightarrow$ Design Engineer.
-    \item Built C\#/PL-SQL automation analyzing flight computer telemetry for \textbf{CH-53K and S-92} helicopter programs.
-    \item Created Tableau dashboards for \textbf{20+ screen mission control center}; built Oracle data warehouse with Monte Carlo forecasting.
-    \item Collaborated with \textbf{FAA certification}, flight testing teams, and on-site hangar inspections of component failures.
-    \item Received \textbf{Top Gear Award} and \textbf{two Flight Awards} for automation and analytics tooling.
+    \item Promoted twice in 3 years: Product Support Engineer to BI Developer to Design Engineer.
+    \item Built C\#/PL-SQL automation analyzing flight computer telemetry for \textbf{CH-53K and S-92} military helicopter programs.
+    \item Created Tableau dashboards for \textbf{20+ screen mission control center}. Built Oracle data warehouse with Monte Carlo simulation forecasting.
+    \item Collaborated with \textbf{FAA certification} teams, flight test engineers, and conducted on-site hangar inspections of component failures.
+    \item Received \textbf{Top Gear Award} and \textbf{two Flight Awards} for automation and analytics work.
 \end{itemize}
 
 % Education
 \section*{Education \& Certifications}
+\vspace{0.3em}
 \noindent
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{M.S., Computer Science} (GPA: 3.98) & Sacred Heart University \\
-    \textbf{B.S., Aerospace Engineering} & Embry-Riddle Aeronautical University \\
+    \textbf{M.S., Computer Science} (GPA: 3.98) & Sacred Heart University \\[0.4em]
+    \textbf{B.S., Aerospace Engineering} & Embry-Riddle Aeronautical University \\[0.4em]
     \textbf{B.B.A., Management} & SUNY Morrisville \\
 \end{tabularx}
-\vspace{0.3em}
+\vspace{0.5em}
 \noindent
 \textit{FAA Private Pilot License} \enspace\textbullet\enspace \textit{.NET Graduate Certificate}

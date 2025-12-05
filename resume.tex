@@ -14,6 +14,7 @@
 \usepackage[colorlinks=true,urlcolor=black,linkcolor=black]{hyperref}
 \usepackage{microtype}
 \usepackage[none]{hyphenat}
+\usepackage{needspace}
 
 % Colors
 \definecolor{colorHeadings}{RGB}{20,40,80}
@@ -32,21 +33,21 @@
 }
 
 % Spacing & constants
-\linespread{1.12}
+\linespread{1.09}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.1em}
+\setlength{\parskip}{0.06em}
 
 \newlength{\headerNameBottomMargin}\setlength{\headerNameBottomMargin}{5pt}
-\newlength{\headerContactBottomMargin}\setlength{\headerContactBottomMargin}{1.2em}
-\newlength{\sectionTitleTopMargin}\setlength{\sectionTitleTopMargin}{1.2em}
-\newlength{\sectionTitleBottomMargin}\setlength{\sectionTitleBottomMargin}{0.7em}
-\newlength{\jobGroupBottomMargin}\setlength{\jobGroupBottomMargin}{1.2em}
-\newlength{\jobTitleToMetaMargin}\setlength{\jobTitleToMetaMargin}{0.2em}
-\newlength{\jobMetaToBulletsMargin}\setlength{\jobMetaToBulletsMargin}{0.8em}
+\newlength{\headerContactBottomMargin}\setlength{\headerContactBottomMargin}{1.25em}
+\newlength{\sectionTitleTopMargin}\setlength{\sectionTitleTopMargin}{1.25em}
+\newlength{\sectionTitleBottomMargin}\setlength{\sectionTitleBottomMargin}{0.75em}
+\newlength{\jobGroupBottomMargin}\setlength{\jobGroupBottomMargin}{1.25em}
+\newlength{\jobTitleToMetaMargin}\setlength{\jobTitleToMetaMargin}{0.22em}
+\newlength{\jobMetaToBulletsMargin}\setlength{\jobMetaToBulletsMargin}{0.85em}
 \newlength{\clientRoleTopMargin}\setlength{\clientRoleTopMargin}{-5pt}
 \newlength{\clientRoleBottomMargin}\setlength{\clientRoleBottomMargin}{4pt}
 \newlength{\bulletListTopMargin}\setlength{\bulletListTopMargin}{0pt}
-\newlength{\bulletListItemSeparation}\setlength{\bulletListItemSeparation}{0.5em}
+\newlength{\bulletListItemSeparation}\setlength{\bulletListItemSeparation}{0.52em}
 
 % Page style
 \pagestyle{fancy}
@@ -72,6 +73,7 @@
 \titlespacing*{\section}{0pt}{\sectionTitleTopMargin}{\sectionTitleBottomMargin}
 
 \newcommand{\jobtitle}[4]{%
+    \needspace{3\baselineskip}%
     \noindent{\bfseries\large #1}\par
     \vspace{\jobTitleToMetaMargin}
     \textcolor{colorSubtle}{\textit{#2\enspace\textbullet\enspace#3}\hfill\textit{\small #4}}\par
