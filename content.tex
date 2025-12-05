@@ -9,6 +9,8 @@
 % Header
 {\fontsize{26pt}{30pt}\selectfont\bfseries\RaggedRight
 \textcolor{colorHeadings}{\addfontfeature{LetterSpace=3.5}\resumeName}\par}
+\vspace{0.15em}
+{\normalsize\noindent\textcolor{colorHeadings}{Senior Software Engineer\enspace·\enspace Technical Lead\enspace·\enspace Distributed Systems}\par}
 \vspace{\headerNameBottomMargin}
 {\small\noindent
 \href{\resumeLocationUrl}{\textcolor{colorHeadings}{\resumeLocation}}\contactSeparator
@@ -20,30 +22,33 @@
 
 % Summary
 \noindent
-Platform engineer who pivoted from analyzing flight computer data for military helicopters to architecting distributed systems at Fortune 10 scale. Currently embedded full-time at Optum as technical lead, with additional engineering management responsibilities. Built organization's first Nx monorepo, shipped micro-frontend portal serving 12,500+ daily users, and led modernization across 10+ applications. Three-time Sikorsky engineering award recipient. FAA-licensed pilot.
+Platform engineer who pivoted from analyzing flight computer data for military helicopters to architecting distributed systems at Fortune 10 scale. Technical lead on Optum's CURO platform, also managing engineers and driving hiring at buildit. Built organization's first Nx monorepo, shipped micro-frontend portal serving 12,500+ daily users, and led modernization across 10+ applications. Three-time Sikorsky engineering award recipient. FAA-licensed pilot.
 
 % Technical Expertise
 \section*{Technical Expertise}
-\begin{itemize}[leftmargin=0pt,label={}]
+\begin{itemize}[leftmargin=0pt,label={},itemsep=0.1em]
     \item \textbf{Languages:} Java 17+, TypeScript, Python, SQL, C\#
     \item \textbf{Backend:} Spring Boot/Cloud, GraphQL, REST APIs, Microservices, Kafka, RabbitMQ
-    \item \textbf{Cloud:} Azure (AKS, DevOps), AWS (EC2, RDS, SQS, Lambda), Kubernetes, Docker, Helm, Terraform
+    \item \textbf{Cloud \& Infrastructure:} Azure (AKS, DevOps), AWS (EC2, RDS, SQS, Lambda), Kubernetes, Docker, Helm, Terraform
     \item \textbf{Data:} PostgreSQL, MongoDB, Redis, Elasticsearch, Oracle, SQL Server
     \item \textbf{Frontend:} Angular, React, Nx monorepos, Single-SPA, Module Federation, RxJS
-    \item \textbf{Practices:} System Design, CI/CD, Agile/Scrum, Observability (Datadog), Testing (Cypress, JUnit)
+\end{itemize}
+\vspace{-0.3em}
+\begin{itemize}[leftmargin=0pt,label={},itemsep=0.1em]
+    \item \textbf{Architecture:} System Design, Micro-frontends, Event-driven Systems, API Design
+    \item \textbf{Practices:} CI/CD, Agile/Scrum, Observability (Datadog), Testing (Cypress, JUnit)
 \end{itemize}
 
 % Professional Experience
 \section*{Professional Experience}
 
-\jobtitle{Senior Software Engineer}{buildit --- Embedded at Optum (UnitedHealth Group)}{Remote}{Jan 2022 -- Present}
+\jobtitle{Senior Software Engineer / Technical Lead}{buildit --- Embedded at Optum (UnitedHealth Group)}{Remote}{Jan 2022 -- Present}
 \begin{itemize}
-    \item Embedded full-time on Optum CURO platform team at Fortune 10 healthcare org; also hold engineering management responsibilities at buildit including performance reviews and technical hiring.
+    \item Technical lead on Optum's CURO platform team (Fortune 10 healthcare); own architecture decisions, lead design reviews, and mentor engineers. Also manage team at buildit: performance reviews, hiring, and technical direction.
     \item Architected organization's first \textbf{Nx monorepo}, consolidating frontend codebases into unified structure with independent versioning and per-app CI/CD pipelines.
     \item Built greenfield \textbf{Single-SPA micro-frontend portal} serving \textbf{12,500+ daily active users}, integrating disparate backends via GraphQL federation.
     \item Led \textbf{Angular 11$\rightarrow$17 migration} across five applications; identified bottlenecks via Datadog APM and eliminated performance regressions.
     \item Replaced manual deployments with production CI/CD (GitHub Actions, Helm, Kubernetes)---enabling zero-downtime releases.
-    \item Lead architectural design reviews across teams; conduct technical interviews and mentor engineers.
 \end{itemize}
 
 \jobtitle{Senior Software Engineer (Technical Lead)}{iptiQ by Swiss Re}{Armonk, NY}{Aug 2020 -- Jan 2022}
