@@ -4,7 +4,57 @@ This file provides context for AI assistants (Claude, etc.) working on this resu
 
 ## Repository Purpose
 
-LaTeX-based resume for **Anthony Tabano**, a Staff-caliber Software Engineer targeting Senior/Staff roles at FAANG or FAANG-adjacent companies.
+LaTeX-based resume for **Anthony Tabano**, a Senior Software Engineer targeting Senior/Staff roles at FAANG or FAANG-adjacent companies.
+
+## CRITICAL: Employment Branding Strategy
+
+**Current situation:** Anthony works for **buildit**, which is owned by **Wipro**. This requires careful handling:
+
+### The Facts
+- Hired by buildit (a ~100-person velocity consulting firm) in January 2022
+- Did NOT know buildit was owned by Wipro when he joined
+- Wipro has since gutted buildit's leadership and engineering culture
+- Currently embedded full-time at Optum (UnitedHealth Group) on their CURO platform team
+- Internal level: AC2 (manager of managers - L1 managers report to him)
+- External title: Senior Software Engineer
+- Has been promoted without salary increases (typical MSP behavior)
+
+### Resume Strategy (IMPORTANT)
+- **Use "buildit" as employer**, NOT Wipro
+- This is accurate: Instagram employees say "Instagram" not "Meta"
+- Background checks will reveal Wipro as parent company - that's fine, by then he's in conversation
+- The Wipro name triggers auto-rejection at some companies (per Blind forums)
+- Resume shows: `buildit — Embedded at Optum (UnitedHealth Group)`
+
+### What Background Checks Will Show
+- **Employer of record:** Wipro (parent company)
+- **Internal band:** AC2 or similar
+- **Dates:** Jan 2022 – Present
+- Be prepared to explain internal bands vs functional titles
+
+### Interview Talking Points
+
+**"Why are you leaving?"**
+> "The engineering organization has changed significantly. The parent company consolidated control, there's been significant leadership turnover, increased offshore hiring, and reduced focus on technical quality. I'm looking for a team where technical excellence is the priority."
+
+**"Why consulting/staff aug?"**
+> "I didn't seek it out. When I joined buildit, I thought it was a boutique engineering firm. They placed me embedded at Optum, which has been great—I've been on the same team for 3+ years leading architectural initiatives. But the parent company's direction has shifted away from quality engineering."
+
+**"So you work for buildit but you're at Optum?"**
+> "buildit placed me as an embedded engineer on Optum's platform team. I work directly with Optum engineers on their roadmap—it's not typical staff aug where you're doing project work. I've led major architectural initiatives including their Nx monorepo strategy and micro-frontend portal."
+
+**"What's the relationship with Wipro?"**
+> "Wipro is the parent company of buildit. buildit was an acquisition—originally an independent consulting firm. Over the past couple years, Wipro has taken more control of operations."
+
+**"Why not join Optum directly?"**
+> "I'd be open to that, but the embedded arrangement has worked well for the technical work. The challenges are more on the buildit side with the organizational changes."
+
+### DO NOT
+- Say "Wipro" unprompted on the resume or in early conversations
+- Lie about the relationship if directly asked
+- Badmouth Wipro aggressively (keep it professional)
+- Claim "Staff Engineer" title (actual title is Senior)
+- Claim to do "system design interviews" (he does technical interviews, not system design)
 
 ## Build Commands
 
@@ -157,3 +207,176 @@ Key archive files:
 - GitHub: github.com/tabano86
 - Phone: +1-845-849-4125
 - Location: Hudson Valley, NY (Remote preferred)
+
+## Target Companies & Role Alignment
+
+### FAANG Targeting
+
+| Company | Fit | Notes |
+|---------|-----|-------|
+| **Amazon** | Strong | Metrics-driven culture matches "12,500 DAU". Prepare STAR stories. Target L5/L6. |
+| **Google** | Good | Nx monorepo, architecture work resonates. L5/L6 targets. |
+| **Meta** | Good | Micro-frontend/scale experience relevant. |
+| **Microsoft** | Strong | Azure experience is a plus. .NET background from Sikorsky helps. |
+| **Apple** | Weak | Stack mismatch (heavy Obj-C/Swift). |
+
+### FAANG-Adjacent Targets
+
+| Company | Why It Fits |
+|---------|-------------|
+| **Stripe, Square** | Fintech - iptiQ insurance background shows domain versatility |
+| **Datadog** | Uses it daily at Optum - built-in conversation starter |
+| **Snowflake, Databricks** | Data engineering adjacent, Oracle/analytics background |
+| **Netflix** | Frontend platform work aligns |
+| **Palantir, Anduril, SpaceX** | **Aerospace background is gold here** - security clearance potential |
+
+### The Aerospace Angle
+
+For defense tech (Palantir, Anduril, SpaceX, L3Harris, Northrop), the Sikorsky experience transforms from "old job" to **major differentiator**:
+- Demonstrates clearance eligibility
+- Shows ability to work in regulated/high-stakes environments
+- FAA certification collaboration experience
+- Systems thinking from military helicopter programs
+
+## Interview Preparation Notes
+
+### Known Gap: System Design Interviews
+Anthony conducts technical interviews but NOT system design interviews at current role. For FAANG/Staff roles, system design is mandatory.
+
+**Prep recommendations:**
+- Practice on Excalidraw/Miro
+- Study: "Designing Data-Intensive Applications" by Kleppmann
+- Mock interviews via Pramp or interviewing.io
+- Actual experience is solid (Nx monorepo, micro-frontends, event-driven architecture) - just needs to verbalize patterns
+
+### Reference Strategy
+
+**Complexity:** As an embedded consultant, references are tricky.
+
+| Source | Can Speak To | Notes |
+|--------|--------------|-------|
+| Optum colleagues | Day-to-day technical work | He's a vendor to them technically |
+| buildit colleagues | Management capability | Many may have left during gutting |
+| Previous employers | Straightforward | iptiQ, AutoNation, Columbia, Sikorsky |
+
+**Recommendation:** Line up at least one Optum contact (peer or stakeholder) who can speak to technical contributions.
+
+### Compensation Anchoring
+
+- Likely underpaid: promotions without salary increases
+- Can cite market rate without appearing greedy
+- Frame as: "I've taken on significantly more responsibility without corresponding compensation adjustment"
+
+### LinkedIn Consistency
+
+**Critical:** LinkedIn must match resume strategy.
+- Company: "buildit" (can add "a Wipro company" in parentheses if required)
+- Title: "Senior Software Engineer"
+- If LinkedIn says "Wipro" and resume says "buildit", looks deceptive
+- Keep them consistent
+
+## Behavioral Interview Stories (STAR Format)
+
+Prepare stories for these common questions using archive-verified examples:
+
+| Question | Suggested Story |
+|----------|-----------------|
+| "Tell me about a time you led a major technical initiative" | Nx monorepo consolidation at Optum |
+| "Describe a performance improvement you made" | 5hr→15min AutoNation batch job |
+| "How do you handle team conflict?" | Managing 8-person onshore/offshore team at iptiQ |
+| "Tell me about a failure" | TBD - prepare one |
+| "Why did you transition from aerospace?" | Passion for building software, started automating at Sikorsky, realized that was what I wanted to do |
+| "What's your management philosophy?" | Columbia MDP training + current dual IC/manager role |
+
+## Resume Version Control
+
+When updating the resume:
+1. Make changes in `content.tex` (not `resume.tex`)
+2. Build with `.\build.ps1` (Windows) or `make` (Unix)
+3. Verify PDF is exactly 2 pages
+4. Test that all links work
+5. Git commit only `content.tex` changes (PDFs are gitignored)
+
+## ATS Optimization
+
+The resume includes keywords for ATS (Applicant Tracking Systems):
+
+**Explicitly included:**
+- REST APIs, Microservices, GraphQL (architecture patterns)
+- System Design (even though he doesn't interview on it, he does it)
+- CI/CD, Agile/Scrum (process keywords)
+- Specific technologies: Java, TypeScript, Python, Spring Boot, Angular, React, Kubernetes, Docker, Terraform, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ
+
+**Format considerations:**
+- Uses standard section headers (Technical Expertise, Professional Experience, Education)
+- Dates in consistent format (Mon YYYY)
+- Job titles in standard format
+- No tables in content sections (breaks some ATS parsers)
+- PDF generated from LaTeX parses cleanly
+
+## Outreach Strategy
+
+### Application Channels (In Order of Effectiveness)
+
+1. **Internal referrals** - Best chance. Ask contacts at target companies.
+2. **Recruiter relationships** - Technical recruiters at agencies who specialize in FAANG placement
+3. **LinkedIn "Easy Apply"** - Low effort, low conversion, but volume helps
+4. **Direct company career pages** - Standard, moderate conversion
+
+### LinkedIn Profile Checklist
+
+- [ ] Headline matches target role: "Senior Software Engineer | Platform Engineering | Distributed Systems"
+- [ ] Company shows "buildit" not "Wipro"
+- [ ] Title shows "Senior Software Engineer"
+- [ ] Featured section shows the 12,500 DAU portal or other highlights
+- [ ] Skills section includes all keywords from Technical Expertise
+- [ ] Recommendations from Optum colleagues if possible
+
+### Cold Outreach Template (Recruiters)
+
+```
+Hi [Name],
+
+I'm a Senior Software Engineer with 10+ years of experience, currently leading
+platform engineering at Optum (Fortune 10). I'm exploring senior/staff roles
+at [Company] where I can bring my experience building systems at scale.
+
+Key highlights:
+- Architected micro-frontend portal serving 12,500+ daily users
+- Led Nx monorepo consolidation across enterprise frontend teams
+- Background in aerospace engineering (Sikorsky/Lockheed Martin)
+
+Would you be open to a brief call to discuss opportunities?
+
+Best,
+Anthony
+```
+
+## Red Flags Recruiters Might Flag
+
+Be prepared to address:
+
+| Concern | Response |
+|---------|----------|
+| "Consulting company, not product" | "I've been embedded at Optum for 3+ years on their core platform team - it's product work, not project-based consulting" |
+| "Short tenure at iptiQ (1.5 years)" | "Swiss Re strategically divested the iptiQ division. The team was disbanded." |
+| "No FAANG experience" | "I've operated at FAANG scale - 12,500 DAU portal, Fortune 10 healthcare org with enterprise requirements" |
+| "Aerospace background is unrelated" | "It taught me systems thinking and working in high-stakes, regulated environments - directly applicable to building reliable distributed systems" |
+| "Manager title but applying for IC" | "I've maintained hands-on technical work throughout - the management is in addition to, not instead of, engineering" |
+
+## Quick Reference Card
+
+**When asked "Where do you work?"**
+> "buildit, embedded at Optum"
+
+**When asked "What's buildit?"**
+> "An engineering consultancy, part of Wipro. I'm embedded full-time on Optum's platform team."
+
+**When asked "So are you an FTE or contractor?"**
+> "I'm a W2 employee of buildit, embedded at Optum. Not a 1099 contractor."
+
+**When asked "What level are you?"**
+> "Senior Software Engineer. I also have people management responsibilities - I manage a team of engineers."
+
+**When asked about title discrepancy on background check:**
+> "AC2 is the internal band at Wipro/buildit. Senior Software Engineer is my functional title."
